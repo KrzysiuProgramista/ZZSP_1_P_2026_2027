@@ -1,9 +1,0 @@
-name = input("what is your name? ")
-age = input("how old are you? ")
-town = input("what is your home town? ")
-
-print("name:", name)
-print("age:", age)
-print("town: ", town)
-#end specifies the character printed at the end of the print() output
-#sep sets the character that separates values in print()
