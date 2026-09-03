@@ -6,4 +6,4 @@ print("Name:",name)
 print("Age:",age)
 print("Home town:",home_town)
 #end specifies the character printed at the end of the print() output
-#sep specifies the separator between multiple values in a single print() call
+#sep sets the character that separates values in print()
