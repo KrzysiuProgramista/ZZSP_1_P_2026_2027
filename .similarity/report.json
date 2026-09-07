@@ -1,5 +1,5 @@
 {
-  "generated": "89214021971b442a2ba1cd5e266e65e8a6d00756",
+  "generated": "955d9dd5e2dbcc07cd123e5660c19bc9c018de9a",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 14,
@@ -66,16 +66,16 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-07T16:15:37+02:00"
+      },
+      "earlier": {
         "pupil": "KMIEC_HUBERT",
         "path": "KMIEC_HUBERT/03_09_2026/about_me.py",
         "assignment": "03_09_2026",
         "added": "2026-09-03T17:30:52+02:00"
-      },
-      "earlier": {
-        "pupil": "MICHALAK_PIOTR",
-        "path": "MICHALAK_PIOTR/about_me.py",
-        "assignment": "(root)",
-        "added": "2026-09-03T16:11:53+02:00"
       },
       "jaccard": 1.0,
       "text": 1.0,
