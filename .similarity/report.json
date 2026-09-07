@@ -1,80 +1,105 @@
 {
-  "generated": "9d17d0e5909cd3b6483788102155a38c86d1d606",
-  "minChars": 300,
+  "generated": "555ede145532f42d47872dafce28df99d9bbdd43",
+  "minChars": 100,
   "threshold": 0.6,
   "fileCount": 14,
   "pupilCount": 14,
-  "skipped": [
+  "skipped": [],
+  "flagged": [
     {
-      "path": "CYGAN_PAWEL/03_09_2026/about_me.py",
-      "pupil": "CYGAN_PAWEL",
-      "chars": 155
-    },
-    {
-      "path": "CZERNIAK_SZYMON/03_09_2026/about_me.py",
-      "pupil": "CZERNIAK_SZYMON",
-      "chars": 179
-    },
-    {
-      "path": "FOKS_JAKUB/03_09_2026/about_me.py",
-      "pupil": "FOKS_JAKUB",
+      "sameCommit": false,
+      "later": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-06T21:51:30+02:00"
+      },
+      "earlier": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-04T17:23:53+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
       "chars": 123
     },
     {
-      "path": "GABARA_KAROL/03_09_2026/about_me.py",
-      "pupil": "GABARA_KAROL",
+      "sameCommit": false,
+      "later": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-06T21:51:30+02:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/03_09-2026/about_me.py",
+        "assignment": "03_09-2026",
+        "added": "2026-09-03T19:01:49+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
       "chars": 123
     },
     {
-      "path": "GOSS_LEON/03_09-2026/about_me.py",
-      "pupil": "GOSS_LEON",
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-04T17:23:53+02:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/03_09-2026/about_me.py",
+        "assignment": "03_09-2026",
+        "added": "2026-09-03T19:01:49+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
       "chars": 123
     },
     {
-      "path": "JEDRZEJCZAK_ALEKSANDER/03_09_2026/about_me.py",
-      "pupil": "JEDRZEJCZAK_ALEKSANDER",
-      "chars": 139
-    },
-    {
-      "path": "KEPINSKI_ADRIAN/03_09_2026/about_me.py",
-      "pupil": "KEPINSKI_ADRIAN",
-      "chars": 175
-    },
-    {
-      "path": "KMIEC_HUBERT/03_09_2026/about_me.py",
-      "pupil": "KMIEC_HUBERT",
+      "sameCommit": false,
+      "later": {
+        "pupil": "KMIEC_HUBERT",
+        "path": "KMIEC_HUBERT/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-03T17:30:52+02:00"
+      },
+      "earlier": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/03.09.2026/about_me.py",
+        "assignment": "03.09.2026",
+        "added": "2026-09-03T16:19:22+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
       "chars": 133
     },
     {
-      "path": "LIALIUK_SERHII/03_09_2026/about_me.py",
-      "pupil": "LIALIUK_SERHII",
-      "chars": 123
-    },
-    {
-      "path": "MICHALAK_PIOTR/03.09.2026/about_me.py",
-      "pupil": "MICHALAK_PIOTR",
-      "chars": 133
-    },
-    {
-      "path": "STRZELECKI_ADAM/03_09_2026/about_me.py",
-      "pupil": "STRZELECKI_ADAM",
-      "chars": 131
-    },
-    {
-      "path": "SWIATOSLAV_TOMIUK/03_09_2026/about_me.py",
-      "pupil": "SWIATOSLAV_TOMIUK",
-      "chars": 131
-    },
-    {
-      "path": "WALUSIAK_SEBASTIAN/03_09_202603_09_2026/about_me.py",
-      "pupil": "WALUSIAK_SEBASTIAN",
-      "chars": 131
-    },
-    {
-      "path": "WOJECH_ADAM/03_09_2026/about_me.py",
-      "pupil": "WOJECH_ADAM",
+      "sameCommit": false,
+      "later": {
+        "pupil": "WALUSIAK_SEBASTIAN",
+        "path": "WALUSIAK_SEBASTIAN/03_09_202603_09_2026/about_me.py",
+        "assignment": "03_09_202603_09_2026",
+        "added": "2026-09-03T20:16:10+02:00"
+      },
+      "earlier": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-03T19:59:07+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
       "chars": 131
     }
-  ],
-  "flagged": []
+  ]
 }
