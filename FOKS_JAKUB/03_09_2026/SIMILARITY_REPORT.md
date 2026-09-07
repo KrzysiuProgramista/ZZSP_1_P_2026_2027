@@ -9,7 +9,6 @@ Pupil folder: `FOKS_JAKUB`
 | your file | similarity | length |
 |---|---|---|
 | `FOKS_JAKUB/03_09_2026/about_me.py` | **100%** | 123 chars |
-| `FOKS_JAKUB/03_09_2026/about_me.py` | **100%** | 123 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 
