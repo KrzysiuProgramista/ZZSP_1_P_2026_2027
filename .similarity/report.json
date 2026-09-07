@@ -1,5 +1,5 @@
 {
-  "generated": "955d9dd5e2dbcc07cd123e5660c19bc9c018de9a",
+  "generated": "8effb220ee05e237b1b7d1501395ecd3b8589360",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 14,
@@ -86,9 +86,9 @@
       "sameCommit": false,
       "later": {
         "pupil": "WALUSIAK_SEBASTIAN",
-        "path": "WALUSIAK_SEBASTIAN/03_09_202603_09_2026/about_me.py",
-        "assignment": "03_09_202603_09_2026",
-        "added": "2026-09-03T20:16:10+02:00"
+        "path": "WALUSIAK_SEBASTIAN/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-07T18:34:24+02:00"
       },
       "earlier": {
         "pupil": "SWIATOSLAV_TOMIUK",
