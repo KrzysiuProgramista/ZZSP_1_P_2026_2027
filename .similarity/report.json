@@ -1,9 +1,9 @@
 {
-  "generated": "8343c568104e5b37297301b220b7cbbcecb0037a",
+  "generated": "89214021971b442a2ba1cd5e266e65e8a6d00756",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 13,
-  "pupilCount": 13,
+  "fileCount": 14,
+  "pupilCount": 14,
   "skipped": [],
   "flagged": [
     {
@@ -62,6 +62,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KMIEC_HUBERT",
+        "path": "KMIEC_HUBERT/03_09_2026/about_me.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-03T17:30:52+02:00"
+      },
+      "earlier": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/about_me.py",
+        "assignment": "(root)",
+        "added": "2026-09-03T16:11:53+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 133
     },
     {
       "sameCommit": false,
