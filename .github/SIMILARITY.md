@@ -31,6 +31,10 @@ them are fine to say out loud:
 3. **"I copied it."** Rewrite it your own way and push again. The report file
    removes itself once the overlap drops.
 
+If two submissions arrive in the **same commit**, neither of you was first, so
+the report goes into both folders and says so. It is not pointing at either of
+you in particular.
+
 Do not delete the report by hand — it is regenerated on every push, so deleting
 it just brings it back and looks worse than leaving it.
 

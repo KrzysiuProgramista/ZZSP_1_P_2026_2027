@@ -62,11 +62,16 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A ':(glob)**/SIMILARITY_REPORT.md' .similarity
+          # -A because a glob pathspec that matches nothing is a fatal error,
+          # and on a clean run there are no report files at all. The checkout is
+          # pristine, so -A stages exactly what the script wrote or deleted.
+          git add -A
           if git diff --cached --quiet; then
             echo 'reports unchanged'
             exit 0
           fi
+          echo 'staged:'
+          git diff --cached --name-status
           git commit -m 'similarity: update reports [skip ci]'
           git push origin "HEAD:${{ github.head_ref || github.ref_name }}"
 

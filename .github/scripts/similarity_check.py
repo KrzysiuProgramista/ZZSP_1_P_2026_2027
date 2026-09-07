@@ -144,6 +144,7 @@ class Sub:
     grams: set[str] = field(repr=False, default_factory=set)
     fp: str | None = field(repr=False, default=None)
     added: str | None = None  # ISO date the file first appeared in git
+    order: int | None = None  # position of that commit in history
 
     @property
     def size(self) -> int:
@@ -154,8 +155,14 @@ class Sub:
         return os.path.basename(self.path)
 
 
-def git_added_dates(repo: Path) -> dict[str, str]:
-    """Earliest commit date per path, from one pass over the history."""
+def git_added_dates(repo: Path) -> dict[str, tuple[str, int]]:
+    """Per path: (date, position) of the commit that first added it.
+
+    The position is what makes the ordering strict. Author dates are only
+    second-resolution and two pupils can easily share one, while several files
+    added by a single commit share a date *legitimately* - in that case neither
+    is "later" and the caller must not guess.
+    """
     try:
         out = subprocess.run(
             ["git", "log", "--all", "--reverse", "--date-order",
@@ -166,13 +173,14 @@ def git_added_dates(repo: Path) -> dict[str, str]:
         return {}
     if out.returncode != 0:
         return {}
-    dates: dict[str, str] = {}
-    when = None
+    dates: dict[str, tuple[str, int]] = {}
+    when, position = None, -1
     for line in out.stdout.splitlines():
         if line.startswith("\x01"):
             when = line[1:]
+            position += 1
         elif line.strip() and when:
-            dates.setdefault(line.strip(), when)
+            dates.setdefault(line.strip(), (when, position))
     return dates
 
 
@@ -190,8 +198,9 @@ def collect(repo: Path) -> list[Sub]:
                 continue
             parts = rel.split("/")
             assignment = parts[1] if len(parts) > 2 else "(root)"
+            added, order = dates.get(rel, (None, None))
             s = Sub(path=rel, pupil=pupil_dir.name, assignment=assignment,
-                    source=src, added=dates.get(rel))
+                    source=src, added=added, order=order)
             s.norm = normalise(src)
             s.grams = shingles(s.norm)
             s.fp = ast_fingerprint(src)
@@ -208,15 +217,23 @@ class Hit:
     struct: float | None
 
     @property
-    def later(self) -> Sub:
-        """Whichever of the two appeared in git second."""
-        if self.a.added and self.b.added:
-            return self.b if self.b.added >= self.a.added else self.a
-        return self.b
+    def ordered(self) -> tuple[Sub, Sub] | None:
+        """(earlier, later), or None when the two cannot be ordered.
+
+        None means they arrived in the same commit, or history is unavailable.
+        There is genuinely no later submitter then, so both are reported.
+        """
+        if self.a.order is None or self.b.order is None:
+            return None
+        if self.a.order == self.b.order:
+            return None
+        return (self.a, self.b) if self.a.order < self.b.order else (self.b, self.a)
 
     @property
-    def earlier(self) -> Sub:
-        return self.a if self.later is self.b else self.b
+    def blamed(self) -> list[Sub]:
+        """Whose folder gets the report: the later one, or both if tied."""
+        o = self.ordered
+        return [o[1]] if o else [self.a, self.b]
 
 
 def compare(subs: list[Sub], min_chars: int, threshold: float,
@@ -250,14 +267,21 @@ def pupil_report(pupil: str, hits: list[Hit], threshold: float,
         "| your file | similarity | length |",
         "|---|---|---|",
     ]
+    same_push = False
     for h in sorted(hits, key=lambda h: -h.jac):
-        mine = h.later if h.later.pupil == pupil else h.earlier
-        other = f" (`{h.earlier.pupil}`)" if name_others and mine is h.later else ""
+        mine = h.a if h.a.pupil == pupil else h.b
+        theirs = h.b if mine is h.a else h.a
+        if h.ordered is None:
+            same_push = True
+        other = f" (`{theirs.pupil}`)" if name_others else ""
         lines.append(f"| `{mine.path}` | **{h.jac:.0%}**{other} | {mine.size} chars |")
     lines += [
         "",
         f"Flagged because the overlap is at or above {threshold:.0%} on a "
         "substantial amount of code.", "",
+        *(["Both submissions arrived in the same commit, so nobody was 'first'. ",
+           "This same note is in the other folder too - it is not pointing at you.",
+           ""] if same_push else []),
         "### What to do",
         "",
         "- If you wrote this yourself, say so - that is a perfectly good answer,",
@@ -283,15 +307,22 @@ def job_summary(hits: list[Hit], skipped: list[Sub], subs: list[Sub],
     out.append("")
     if hits:
         out += [f"### {len(hits)} pair(s) flagged", "",
-                "| later | earlier | k-gram | text | struct | chars |",
+                "| pushed later | resembles | k-gram | text | struct | chars |",
                 "|---|---|---|---|---|---|"]
         for h in hits:
             st = f"{h.struct:.0%}" if h.struct is not None else "n/a"
-            out.append(f"| `{h.later.pupil}` <br>`{h.later.path}` "
-                       f"| `{h.earlier.pupil}` <br>`{h.earlier.path}` "
-                       f"| **{h.jac:.0%}** | {h.text:.0%} | {st} "
-                       f"| {min(h.a.size, h.b.size)} |")
-        out += ["", "A report file was written into the *later* submitter's folder.", ""]
+            o = h.ordered
+            if o:
+                first, second = o
+                left = f"`{second.pupil}` <br>`{second.path}`"
+                right = f"`{first.pupil}` <br>`{first.path}`"
+            else:
+                left = f"`{h.a.pupil}` + `{h.b.pupil}` <br>_same commit_"
+                right = f"`{h.a.path}` <br>`{h.b.path}`"
+            out.append(f"| {left} | {right} | **{h.jac:.0%}** | {h.text:.0%} "
+                       f"| {st} | {min(h.a.size, h.b.size)} |")
+        out += ["", "The report file goes into the later submitter's folder, or into "
+                "both when the two arrived in the same commit.", ""]
     else:
         out += ["### Nothing flagged", ""]
     if skipped:
@@ -306,6 +337,23 @@ def job_summary(hits: list[Hit], skipped: list[Sub], subs: list[Sub],
             "for information only and never used to flag: on beginner exercises its "
             "median is 84% and its 90th percentile is 100%._"]
     return "\n".join(out) + "\n"
+
+
+def _side(s: Sub) -> dict:
+    return {"pupil": s.pupil, "path": s.path,
+            "assignment": s.assignment, "added": s.added}
+
+
+def _findings_unchanged(target: Path, payload: dict) -> bool:
+    """True when the existing file says the same thing, ignoring `generated`."""
+    if not target.exists():
+        return False
+    try:
+        existing = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return {k: v for k, v in existing.items() if k != "generated"} == \
+           {k: v for k, v in payload.items() if k != "generated"}
 
 
 # --------------------------------------------------------------- main
@@ -346,14 +394,16 @@ def main(argv: list[str] | None = None) -> int:
 
     by_pupil: dict[str, list[Hit]] = {}
     for h in hits:
-        by_pupil.setdefault(h.later.pupil, []).append(h)
+        for sub in h.blamed:
+            by_pupil.setdefault(sub.pupil, []).append(h)
 
     # ---- report files ----------------------------------------------------
     if args.write_reports:
         wanted = {}
         for pupil, ph in by_pupil.items():
             for h in ph:
-                folder = repo / pupil / h.later.assignment
+                sub = next(s for s in h.blamed if s.pupil == pupil)
+                folder = repo / pupil / sub.assignment
                 if not folder.is_dir():
                     folder = repo / pupil
                 wanted.setdefault(folder, []).append(h)
@@ -379,10 +429,9 @@ def main(argv: list[str] | None = None) -> int:
         "skipped": [{"path": s.path, "pupil": s.pupil, "chars": s.size}
                     for s in skipped],
         "flagged": [{
-            "later": {"pupil": h.later.pupil, "path": h.later.path,
-                      "assignment": h.later.assignment, "added": h.later.added},
-            "earlier": {"pupil": h.earlier.pupil, "path": h.earlier.path,
-                        "assignment": h.earlier.assignment, "added": h.earlier.added},
+            "sameCommit": h.ordered is None,
+            "later": _side(h.ordered[1] if h.ordered else h.b),
+            "earlier": _side(h.ordered[0] if h.ordered else h.a),
             "jaccard": round(h.jac, 4), "text": round(h.text, 4),
             "struct": round(h.struct, 4) if h.struct is not None else None,
             "chars": min(h.a.size, h.b.size),
@@ -390,13 +439,19 @@ def main(argv: list[str] | None = None) -> int:
     }
     out_json = args.json_out or (repo / SUMMARY_JSON)
     out_json.parent.mkdir(parents=True, exist_ok=True)
-    out_json.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    # Only rewrite when the FINDINGS changed. `generated` alone would otherwise
+    # differ on every push, so the bot would commit once per pupil per push.
+    if _findings_unchanged(out_json, payload):
+        print(f"{out_json.name}: findings unchanged, left alone", file=sys.stderr)
+    else:
+        out_json.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
     if args.annotate:
         for h in hits:
-            print(f"::warning file={h.later.path}::{h.jac:.0%} overlap with "
-                  f"another submission in this class. See {REPORT_NAME} in your "
-                  f"folder. Your teacher will review it.")
+            for sub in h.blamed:
+                print(f"::warning file={sub.path}::{h.jac:.0%} overlap with "
+                      f"another submission in this class. See {REPORT_NAME} in "
+                      f"your folder. Your teacher will review it.")
 
     if args.summary:
         args.summary.write_text(
