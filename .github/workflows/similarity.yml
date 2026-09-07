@@ -1,0 +1,79 @@
+name: similarity
+
+# Runs whenever anyone pushes work, plus a weekly full sweep.
+#
+# The bot commits SIMILARITY_REPORT.md into the *later* submitter's folder, so
+# the paths-ignore list and the actor guard below are what stop it looping.
+
+on:
+  push:
+    branches: ['**']
+    paths-ignore:
+      - '**/SIMILARITY_REPORT.md'
+      - '.similarity/**'
+  pull_request:
+  schedule:
+    - cron: '0 5 * * 1'          # Monday 05:00 UTC - catches pairs no push saw
+  workflow_dispatch:
+    inputs:
+      threshold:
+        description: 'k-gram overlap at which to flag (0-1)'
+        default: '0.60'
+      min_chars:
+        description: 'skip files with fewer normalised chars than this'
+        default: '300'
+
+concurrency:
+  group: similarity-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write                # needed to commit the reports back
+
+jobs:
+  check:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0         # full history: reports need first-commit dates
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          # no pip install: the checker is standard library only
+
+      - name: Compare submissions
+        run: |
+          python .github/scripts/similarity_check.py \
+            --repo . \
+            --write-reports \
+            --annotate \
+            --threshold "${{ github.event.inputs.threshold || '0.60' }}" \
+            --min-chars "${{ github.event.inputs.min_chars || '300' }}" \
+            --summary "$RUNNER_TEMP/summary.md"
+          cat "$RUNNER_TEMP/summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the reports
+        # a pull_request build runs on a merge ref, so pushing there is pointless
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A ':(glob)**/SIMILARITY_REPORT.md' .similarity
+          if git diff --cached --quiet; then
+            echo 'reports unchanged'
+            exit 0
+          fi
+          git commit -m 'similarity: update reports [skip ci]'
+          git push origin "HEAD:${{ github.head_ref || github.ref_name }}"
+
+      - name: Keep the raw result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: similarity-report
+          path: .similarity/report.json
+          retention-days: 90
