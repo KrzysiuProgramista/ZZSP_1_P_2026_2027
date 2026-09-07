@@ -21,7 +21,7 @@ on:
         default: '0.60'
       min_chars:
         description: 'skip files with fewer normalised chars than this'
-        default: '300'
+        default: '100'
 
 concurrency:
   group: similarity-${{ github.ref }}
@@ -52,7 +52,7 @@ jobs:
             --write-reports \
             --annotate \
             --threshold "${{ github.event.inputs.threshold || '0.60' }}" \
-            --min-chars "${{ github.event.inputs.min_chars || '300' }}" \
+            --min-chars "${{ github.event.inputs.min_chars || '100' }}" \
             --summary "$RUNNER_TEMP/summary.md"
           cat "$RUNNER_TEMP/summary.md" >> "$GITHUB_STEP_SUMMARY"
 

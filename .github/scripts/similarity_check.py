@@ -23,6 +23,12 @@ The length gate matters more than the threshold. Below --min-chars of normalised
 source, two correct answers to a tightly specified exercise are simply identical,
 so anything shorter is skipped rather than compared.
 
+The gate is 100 by design choice, which is deliberately permissive: on the
+calibration corpus, pairs under 150 normalised characters had a k-gram median of
+0.03 but a 90th percentile of 0.69, so at this gate the check will surface real
+convergence on trivial exercises. Treat a flag on a short file as "look at it",
+not as a finding. Raise the gate to 300 to suppress that class of noise.
+
 `normalise()` is adapted from PLAGIARISM_CHECKER/NEW_VERSION/plagiarism_checker.py,
 with autojunk disabled and the fingerprints computed once per file instead of once
 per pair.
@@ -361,8 +367,8 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--repo", default=".", type=Path)
-    ap.add_argument("--min-chars", type=int, default=300,
-                    help="skip files with less normalised source than this (default 300)")
+    ap.add_argument("--min-chars", type=int, default=100,
+                    help="skip files with less normalised source than this (default 100)")
     ap.add_argument("--threshold", type=float, default=0.60,
                     help="k-gram overlap at which to flag, 0-1 (default 0.60)")
     ap.add_argument("--only", default="",

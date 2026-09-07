@@ -13,10 +13,13 @@ nothing. If the overlap is high on a substantial piece of code, a file called
 ## What it does *not* do
 
 - It does not decide that you cheated. Your teacher decides that.
-- It does not compare short exercises. Below about 300 characters of real code,
-  two correct answers to a tightly specified task are often identical, and
-  comparing them tells nobody anything. Those files are listed as
-  "too short to judge" and never flagged.
+- It does not compare very short exercises. Below about 100 characters of real
+  code, two correct answers to a tightly specified task are simply identical and
+  comparing them tells nobody anything. Those files are listed as "too short to
+  judge" and never flagged.
+- On a short exercise it can flag work that is genuinely your own. Two people
+  writing three correct lines to the same instructions will often write the same
+  three lines. That is why this is a prompt for a conversation and not a verdict.
 - It does not fail your commit. There is no red cross.
 
 ## If a report appears in your folder
