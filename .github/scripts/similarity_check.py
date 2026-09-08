@@ -243,22 +243,30 @@ class Hit:
 
 
 def compare(subs: list[Sub], min_chars: int, threshold: float,
-            only_pupils: set[str] | None) -> tuple[list[Hit], list[Sub]]:
+            only_pupils: set[str] | None,
+            notice_top: int = 10) -> tuple[list[Hit], list[Hit], list[Sub]]:
+    """Return (flagged, notices, skipped).
+
+    `flagged` crosses the threshold and earns a report file in the pupil's folder.
+    `notices` are the closest pairs BELOW it. They exist because "flagged nothing"
+    and "nothing resembles anything" are different statements, and on a task whose
+    specification dictates every class and method name the second is never true.
+    Notices are shown to the teacher and never written into a pupil's folder.
+    """
     eligible = [s for s in subs if s.size >= min_chars]
     skipped = [s for s in subs if s.size < min_chars]
-    hits: list[Hit] = []
+    scored: list[Hit] = []
     for a, b in combinations(eligible, 2):
         if a.pupil == b.pupil:
             continue
         if only_pupils and a.pupil not in only_pupils and b.pupil not in only_pupils:
             continue
-        j = jaccard(a.grams, b.grams)
-        if j < threshold:
-            continue
         struct = _ratio(a.fp, b.fp) if (a.fp and b.fp) else None
-        hits.append(Hit(a, b, j, _ratio(a.norm, b.norm), struct))
-    hits.sort(key=lambda h: -h.jac)
-    return hits, skipped
+        scored.append(Hit(a, b, jaccard(a.grams, b.grams), _ratio(a.norm, b.norm), struct))
+    scored.sort(key=lambda h: -h.jac)
+    hits = [h for h in scored if h.jac >= threshold]
+    notices = [h for h in scored if h.jac < threshold][:notice_top]
+    return hits, notices, skipped
 
 
 # --------------------------------------------------------------- output
@@ -303,8 +311,8 @@ def pupil_report(pupil: str, hits: list[Hit], threshold: float,
     return "\n".join(lines) + "\n"
 
 
-def job_summary(hits: list[Hit], skipped: list[Sub], subs: list[Sub],
-                min_chars: int, threshold: float) -> str:
+def job_summary(hits: list[Hit], notices: list[Hit], skipped: list[Sub],
+                subs: list[Sub], min_chars: int, threshold: float) -> str:
     out = ["## Similarity check", ""]
     pupils = sorted({s.pupil for s in subs})
     out.append(f"{len(subs)} Python file(s) from {len(pupils)} pupil folder(s). "
@@ -331,6 +339,18 @@ def job_summary(hits: list[Hit], skipped: list[Sub], subs: list[Sub],
                 "both when the two arrived in the same commit.", ""]
     else:
         out += ["### Nothing flagged", ""]
+    if notices:
+        out += ["### Closest pairs below the threshold", "",
+                "Shown so you can see the shape of the cohort. No report file is "
+                "written for these and no pupil is told.", "",
+                "| pair | k-gram | text | struct | chars |", "|---|---|---|---|---|"]
+        for h in notices:
+            st = f"{h.struct:.0%}" if h.struct is not None else "n/a"
+            out.append(f"| `{h.a.pupil}` / `{h.b.pupil}` | {h.jac:.0%} | {h.text:.0%} "
+                       f"| {st} | {min(h.a.size, h.b.size)} |")
+        out += ["", "On a task whose specification dictates the class and method names, "
+                "expect these to be high. That is the task, not the pupils.", ""]
+
     if skipped:
         out += [f"<details><summary>{len(skipped)} file(s) too short to judge "
                 f"(under {min_chars} normalised chars)</summary>", ""]
@@ -379,6 +399,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--name-others", action="store_true",
                     help="name the other pupil inside the committed report "
                          "(off by default; names always appear in the job summary)")
+    ap.add_argument("--notice-top", type=int, default=10,
+                    help="how many closest below-threshold pairs to report as "
+                         "notices, for the teacher only (default 10; 0 disables)")
     ap.add_argument("--annotate", action="store_true",
                     help="emit ::warning:: workflow commands for flagged files")
     ap.add_argument("--summary", type=Path, help="write a markdown summary here")
@@ -393,7 +416,8 @@ def main(argv: list[str] | None = None) -> int:
 
     only = {p.strip() for p in args.only.split(",") if p.strip()} or None
     subs = collect(repo)
-    hits, skipped = compare(subs, args.min_chars, args.threshold, only)
+    hits, notices, skipped = compare(subs, args.min_chars, args.threshold,
+                                     only, args.notice_top)
 
     print(f"{len(subs)} file(s), {len(subs) - len(skipped)} above the "
           f"{args.min_chars}-char gate, {len(hits)} pair(s) flagged", file=sys.stderr)
@@ -442,6 +466,13 @@ def main(argv: list[str] | None = None) -> int:
             "struct": round(h.struct, 4) if h.struct is not None else None,
             "chars": min(h.a.size, h.b.size),
         } for h in hits],
+        "notices": [{
+            "pupils": sorted([h.a.pupil, h.b.pupil]),
+            "paths": [h.a.path, h.b.path],
+            "jaccard": round(h.jac, 4), "text": round(h.text, 4),
+            "struct": round(h.struct, 4) if h.struct is not None else None,
+            "chars": min(h.a.size, h.b.size),
+        } for h in notices],
     }
     out_json = args.json_out or (repo / SUMMARY_JSON)
     out_json.parent.mkdir(parents=True, exist_ok=True)
@@ -461,7 +492,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.summary:
         args.summary.write_text(
-            job_summary(hits, skipped, subs, args.min_chars, args.threshold),
+            job_summary(hits, notices, skipped, subs, args.min_chars, args.threshold),
             encoding="utf-8")
 
     return 0   # never fail the build
