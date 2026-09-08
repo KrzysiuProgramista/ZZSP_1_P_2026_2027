@@ -1,5 +1,5 @@
 {
-  "generated": "8effb220ee05e237b1b7d1501395ecd3b8589360",
+  "generated": "7a570fcc95e237fdd2bda52cccffa838018ef919",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 14,
@@ -100,6 +100,148 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 131
+    }
+  ],
+  "notices": [
+    {
+      "pupils": [
+        "SWIATOSLAV_TOMIUK",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "SWIATOSLAV_TOMIUK/03_09_2026/about_me.py",
+        "WOJECH_ADAM/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.4118,
+      "text": 0.9847,
+      "struct": 1.0,
+      "chars": 131
+    },
+    {
+      "pupils": [
+        "WALUSIAK_SEBASTIAN",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "WALUSIAK_SEBASTIAN/03_09_2026/about_me.py",
+        "WOJECH_ADAM/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.4118,
+      "text": 0.9847,
+      "struct": 1.0,
+      "chars": 131
+    },
+    {
+      "pupils": [
+        "FOKS_JAKUB",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "FOKS_JAKUB/03_09_2026/about_me.py",
+        "WOJECH_ADAM/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3465,
+      "text": 0.9685,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "GABARA_KAROL",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "GABARA_KAROL/03_09_2026/about_me.py",
+        "WOJECH_ADAM/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3465,
+      "text": 0.9685,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "GOSS_LEON",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "GOSS_LEON/03_09_2026/about_me.py",
+        "WOJECH_ADAM/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3465,
+      "text": 0.9685,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "FOKS_JAKUB",
+        "KMIEC_HUBERT"
+      ],
+      "paths": [
+        "FOKS_JAKUB/03_09_2026/about_me.py",
+        "KMIEC_HUBERT/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3398,
+      "text": 0.9609,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "FOKS_JAKUB",
+        "MICHALAK_PIOTR"
+      ],
+      "paths": [
+        "FOKS_JAKUB/03_09_2026/about_me.py",
+        "MICHALAK_PIOTR/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3398,
+      "text": 0.9609,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "GABARA_KAROL",
+        "KMIEC_HUBERT"
+      ],
+      "paths": [
+        "GABARA_KAROL/03_09_2026/about_me.py",
+        "KMIEC_HUBERT/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3398,
+      "text": 0.9609,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "GABARA_KAROL",
+        "MICHALAK_PIOTR"
+      ],
+      "paths": [
+        "GABARA_KAROL/03_09_2026/about_me.py",
+        "MICHALAK_PIOTR/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3398,
+      "text": 0.9609,
+      "struct": 1.0,
+      "chars": 123
+    },
+    {
+      "pupils": [
+        "GOSS_LEON",
+        "KMIEC_HUBERT"
+      ],
+      "paths": [
+        "GOSS_LEON/03_09_2026/about_me.py",
+        "KMIEC_HUBERT/03_09_2026/about_me.py"
+      ],
+      "jaccard": 0.3398,
+      "text": 0.9609,
+      "struct": 1.0,
+      "chars": 123
     }
   ]
 }
