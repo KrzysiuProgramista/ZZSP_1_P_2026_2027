@@ -1,10 +1,16 @@
 {
-  "generated": "c41fb1a70b5d81f7f839ef704a9639de9dfd6799",
+  "generated": "0b6b883b0e253ddd1b18fc5e743d65724bd976ff",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 15,
+  "fileCount": 19,
   "pupilCount": 14,
-  "skipped": [],
+  "skipped": [
+    {
+      "path": "WOJECH_ADAM/10_09_2026/email_parts.py",
+      "pupil": "WOJECH_ADAM",
+      "chars": 91
+    }
+  ],
   "flagged": [
     {
       "sameCommit": false,
