@@ -1,0 +1,5 @@
+produkt = input("podaj nazwę produktu ")
+cena = int(input("podaj cenę produktu w zł "))
+ilosc = int(input("podaj ilość produktów "))
+pelna_cena = (cena * ilosc)
+print(ilosc,"x",produkt,"=",pelna_cena,"zł")
