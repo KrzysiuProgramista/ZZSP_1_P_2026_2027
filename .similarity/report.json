@@ -1,10 +1,20 @@
 {
-  "generated": "c2b3204440bba9a2018d38f8c7b0ffa7815a25fa",
+  "generated": "f1624288a203c49077718caaea67c4f821c1ec6f",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 23,
+  "fileCount": 28,
   "pupilCount": 14,
   "skipped": [
+    {
+      "path": "SWIATOSLAV_TOMIUK/10_09_2026/3.py",
+      "pupil": "SWIATOSLAV_TOMIUK",
+      "chars": 36
+    },
+    {
+      "path": "SWIATOSLAV_TOMIUK/10_09_2026/email_parts.py",
+      "pupil": "SWIATOSLAV_TOMIUK",
+      "chars": 81
+    },
     {
       "path": "WOJECH_ADAM/10_09_2026/email_parts.py",
       "pupil": "WOJECH_ADAM",
