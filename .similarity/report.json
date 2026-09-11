@@ -1,8 +1,8 @@
 {
-  "generated": "9ab7096d620728acdd4cb5ca6c4d5f817451104d",
+  "generated": "0de449e286297471041b3266e91d1ce04a2933e7",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 32,
+  "fileCount": 33,
   "pupilCount": 14,
   "skipped": [
     {
@@ -69,6 +69,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/10_09_2026/shopping.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-11T16:18:53+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/10_09_2026/shopping.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-11T16:09:20+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 168
     },
     {
       "sameCommit": false,
