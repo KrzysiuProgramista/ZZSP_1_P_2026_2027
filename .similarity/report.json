@@ -1,10 +1,15 @@
 {
-  "generated": "2b77d79a50484c6ee2786388037efacd38bed3f1",
+  "generated": "d4eee8221330a889d7c7fc7797aaa41fd86cdaa4",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 28,
+  "fileCount": 29,
   "pupilCount": 14,
   "skipped": [
+    {
+      "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
+      "pupil": "FOKS_JAKUB",
+      "chars": 0
+    },
     {
       "path": "GOSS_LEON/10_09_2026/email_parts.py",
       "pupil": "GOSS_LEON",
