@@ -1,8 +1,8 @@
 {
-  "generated": "d8d74e5d92f2b32a16e1f984812f037b55967ffb",
+  "generated": "19027b17a6c4b0dfba7d4eb139eafc12850a5574",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 34,
+  "fileCount": 35,
   "pupilCount": 14,
   "skipped": [
     {
@@ -69,6 +69,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/10_09_2026/password_check.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-11T16:20:44+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/10_09_2026/password_check.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-11T16:08:53+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 199
     },
     {
       "sameCommit": false,
