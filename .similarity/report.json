@@ -1,8 +1,8 @@
 {
-  "generated": "3307f57cd38e95b2b67fc20c17f43742cfe2c563",
+  "generated": "cdb893cf12eed6877f1e8cd9f9ba161e43163506",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 31,
+  "fileCount": 32,
   "pupilCount": 14,
   "skipped": [
     {
@@ -17,6 +17,11 @@
     },
     {
       "path": "FOKS_JAKUB/10_09_2026/shopping.py",
+      "pupil": "FOKS_JAKUB",
+      "chars": 0
+    },
+    {
+      "path": "FOKS_JAKUB/10_09_2026/temperature.py",
       "pupil": "FOKS_JAKUB",
       "chars": 0
     },
