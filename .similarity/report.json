@@ -1,13 +1,18 @@
 {
-  "generated": "19027b17a6c4b0dfba7d4eb139eafc12850a5574",
+  "generated": "c86dc19800b25d62d200992c9636105bda9b67dc",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 35,
+  "fileCount": 36,
   "pupilCount": 14,
   "skipped": [
     {
       "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
       "pupil": "FOKS_JAKUB",
+      "chars": 95
+    },
+    {
+      "path": "GABARA_KAROL/10_09_2026/email_parts.py",
+      "pupil": "GABARA_KAROL",
       "chars": 95
     },
     {
