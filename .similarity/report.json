@@ -1,12 +1,17 @@
 {
-  "generated": "d4eee8221330a889d7c7fc7797aaa41fd86cdaa4",
+  "generated": "c7d164269216d3cf6e0d3ea3d7e61a080bf9f831",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 29,
+  "fileCount": 30,
   "pupilCount": 14,
   "skipped": [
     {
       "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
+      "pupil": "FOKS_JAKUB",
+      "chars": 0
+    },
+    {
+      "path": "FOKS_JAKUB/10_09_2026/password_check.py",
       "pupil": "FOKS_JAKUB",
       "chars": 0
     },
