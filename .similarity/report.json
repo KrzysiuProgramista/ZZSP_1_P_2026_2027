@@ -1,8 +1,8 @@
 {
-  "generated": "7dbae225afa141d24028f881257df8514461f97d",
+  "generated": "839520bb43c15432e0d7381058c89e67675fe001",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 43,
+  "fileCount": 47,
   "pupilCount": 14,
   "skipped": [
     {
@@ -24,6 +24,11 @@
       "path": "GOSS_LEON/10_09_2026/email_parts.py",
       "pupil": "GOSS_LEON",
       "chars": 99
+    },
+    {
+      "path": "LIALIUK_SERHII/10_09_2026/email_parts.py",
+      "pupil": "LIALIUK_SERHII",
+      "chars": 97
     },
     {
       "path": "SWIATOSLAV_TOMIUK/10_09_2026/3.py",
