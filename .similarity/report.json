@@ -1,5 +1,5 @@
 {
-  "generated": "a6d8b30443c16ab6d5455dd871d37a072c0f71a9",
+  "generated": "becea2effc1d3a565623128b82e86f95a4ae77d5",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 43,
@@ -12,11 +12,6 @@
     },
     {
       "path": "CYGAN_PAWEL/10_09_2026/password_check.py",
-      "pupil": "CYGAN_PAWEL",
-      "chars": 0
-    },
-    {
-      "path": "CYGAN_PAWEL/10_09_2026/shopping.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 0
     },
