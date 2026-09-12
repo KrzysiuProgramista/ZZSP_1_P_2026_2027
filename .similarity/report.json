@@ -1,5 +1,5 @@
 {
-  "generated": "431db295e3aea93014748f1ba16a7d5665280ce0",
+  "generated": "7dbae225afa141d24028f881257df8514461f97d",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 43,
@@ -8,7 +8,7 @@
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
-      "chars": 0
+      "chars": 92
     },
     {
       "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
