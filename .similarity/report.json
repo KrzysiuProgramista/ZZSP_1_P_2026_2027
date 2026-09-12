@@ -1,10 +1,15 @@
 {
-  "generated": "a25fb41cc917af6e0971027fcc4aaf4ee9c01ab0",
+  "generated": "6e2ea38d9f0aeb85a867859bd0773f6d52eadc88",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 41,
+  "fileCount": 42,
   "pupilCount": 14,
   "skipped": [
+    {
+      "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
+    },
     {
       "path": "CYGAN_PAWEL/10_09_2026/shopping.py",
       "pupil": "CYGAN_PAWEL",
