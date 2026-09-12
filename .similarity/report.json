@@ -1,12 +1,17 @@
 {
-  "generated": "6e2ea38d9f0aeb85a867859bd0773f6d52eadc88",
+  "generated": "a6d8b30443c16ab6d5455dd871d37a072c0f71a9",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 42,
+  "fileCount": 43,
   "pupilCount": 14,
   "skipped": [
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
+    },
+    {
+      "path": "CYGAN_PAWEL/10_09_2026/password_check.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 0
     },
