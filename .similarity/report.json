@@ -1,12 +1,17 @@
 {
-  "generated": "c7ad028dd7b8310d2af666bd6aea5b1df4f61f15",
+  "generated": "a25fb41cc917af6e0971027fcc4aaf4ee9c01ab0",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 40,
+  "fileCount": 41,
   "pupilCount": 14,
   "skipped": [
     {
       "path": "CYGAN_PAWEL/10_09_2026/shopping.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
+    },
+    {
+      "path": "CYGAN_PAWEL/10_09_2026/temperature.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 0
     },
