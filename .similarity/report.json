@@ -1,8 +1,8 @@
 {
-  "generated": "839520bb43c15432e0d7381058c89e67675fe001",
+  "generated": "adb1eeb8d2c0bd7194700c6b61f3ee30899c048b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 47,
+  "fileCount": 48,
   "pupilCount": 14,
   "skipped": [
     {
@@ -203,6 +203,20 @@
   "notices": [
     {
       "pupils": [
+        "GOSS_LEON",
+        "STRZELECKI_ADAM"
+      ],
+      "paths": [
+        "GOSS_LEON/10_09_2026/shopping.py",
+        "STRZELECKI_ADAM/10_09_2026/shopping.py"
+      ],
+      "jaccard": 0.4915,
+      "text": 0.9109,
+      "struct": 0.9322,
+      "chars": 198
+    },
+    {
+      "pupils": [
         "SWIATOSLAV_TOMIUK",
         "WOJECH_ADAM"
       ],
@@ -321,20 +335,6 @@
       "paths": [
         "GABARA_KAROL/03_09_2026/about_me.py",
         "MICHALAK_PIOTR/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3398,
-      "text": 0.9609,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "GOSS_LEON",
-        "KMIEC_HUBERT"
-      ],
-      "paths": [
-        "GOSS_LEON/03_09_2026/about_me.py",
-        "KMIEC_HUBERT/03_09_2026/about_me.py"
       ],
       "jaccard": 0.3398,
       "text": 0.9609,
