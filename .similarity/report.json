@@ -1,14 +1,19 @@
 {
-  "generated": "b50b167eeef53c0a60457fbf40ca74de0a0b7938",
+  "generated": "0f9e958a57a7cd177daf8b2c3a4fc15b6b2316a9",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 52,
+  "fileCount": 53,
   "pupilCount": 14,
   "skipped": [
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 92
+    },
+    {
+      "path": "CZERNIAK_SZYMON/10_09_2026/temperature.py",
+      "pupil": "CZERNIAK_SZYMON",
+      "chars": 0
     },
     {
       "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
