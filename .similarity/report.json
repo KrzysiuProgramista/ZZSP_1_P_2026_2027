@@ -1,9 +1,9 @@
 {
-  "generated": "7cd55dbeaade6ceb32904a1fc5bbdcc14b5c8138",
+  "generated": "7a58f6a7bb8b4be5034bffc46415cb479e43bd23",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 56,
-  "pupilCount": 14,
+  "fileCount": 60,
+  "pupilCount": 15,
   "skipped": [
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
@@ -218,6 +218,34 @@
   "notices": [
     {
       "pupils": [
+        "FOKS_JAKUB",
+        "SOLTYSIAK_DOMINIK"
+      ],
+      "paths": [
+        "FOKS_JAKUB/10_09_2026/temperature.py",
+        "SOLTYSIAK_DOMINIK/temperaturaaa.py"
+      ],
+      "jaccard": 0.493,
+      "text": 0.9884,
+      "struct": 1.0,
+      "chars": 171
+    },
+    {
+      "pupils": [
+        "GABARA_KAROL",
+        "SOLTYSIAK_DOMINIK"
+      ],
+      "paths": [
+        "GABARA_KAROL/10_09_2026/temperature.py",
+        "SOLTYSIAK_DOMINIK/temperaturaaa.py"
+      ],
+      "jaccard": 0.493,
+      "text": 0.9884,
+      "struct": 1.0,
+      "chars": 171
+    },
+    {
+      "pupils": [
         "GOSS_LEON",
         "STRZELECKI_ADAM"
       ],
@@ -321,34 +349,6 @@
       ],
       "paths": [
         "FOKS_JAKUB/03_09_2026/about_me.py",
-        "MICHALAK_PIOTR/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3398,
-      "text": 0.9609,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "GABARA_KAROL",
-        "KMIEC_HUBERT"
-      ],
-      "paths": [
-        "GABARA_KAROL/03_09_2026/about_me.py",
-        "KMIEC_HUBERT/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3398,
-      "text": 0.9609,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "GABARA_KAROL",
-        "MICHALAK_PIOTR"
-      ],
-      "paths": [
-        "GABARA_KAROL/03_09_2026/about_me.py",
         "MICHALAK_PIOTR/03_09_2026/about_me.py"
       ],
       "jaccard": 0.3398,
