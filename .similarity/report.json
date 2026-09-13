@@ -1,8 +1,8 @@
 {
-  "generated": "8d98e59acf4c0bbd73985d2cdf848cf041b3e4fe",
+  "generated": "7cd55dbeaade6ceb32904a1fc5bbdcc14b5c8138",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 55,
+  "fileCount": 56,
   "pupilCount": 14,
   "skipped": [
     {
@@ -11,12 +11,12 @@
       "chars": 92
     },
     {
-      "path": "CZERNIAK_SZYMON/10_09_2026/explaining.py",
+      "path": "CZERNIAK_SZYMON/10_09_2026/email_parts.py",
       "pupil": "CZERNIAK_SZYMON",
-      "chars": 0
+      "chars": 75
     },
     {
-      "path": "CZERNIAK_SZYMON/10_09_2026/password_check.py",
+      "path": "CZERNIAK_SZYMON/10_09_2026/explaining.py",
       "pupil": "CZERNIAK_SZYMON",
       "chars": 0
     },
