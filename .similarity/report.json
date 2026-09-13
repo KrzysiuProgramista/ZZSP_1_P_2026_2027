@@ -1,8 +1,8 @@
 {
-  "generated": "5ee57895f8e70f1d343c31b61fb9c5c7b0d18342",
+  "generated": "517031cef66405ad67566ae800b3d5094052f17e",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 50,
+  "fileCount": 51,
   "pupilCount": 14,
   "skipped": [
     {
@@ -29,6 +29,11 @@
       "path": "LIALIUK_SERHII/10_09_2026/email_parts.py",
       "pupil": "LIALIUK_SERHII",
       "chars": 97
+    },
+    {
+      "path": "STRZELECKI_ADAM/10_09_2026/email_parts.py",
+      "pupil": "STRZELECKI_ADAM",
+      "chars": 91
     },
     {
       "path": "SWIATOSLAV_TOMIUK/10_09_2026/3.py",
