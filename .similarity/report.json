@@ -1,5 +1,5 @@
 {
-  "generated": "0f9e958a57a7cd177daf8b2c3a4fc15b6b2316a9",
+  "generated": "c2f9cf68dd74497fe7abe0c50ba8e6822d91c18c",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 53,
@@ -9,11 +9,6 @@
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 92
-    },
-    {
-      "path": "CZERNIAK_SZYMON/10_09_2026/temperature.py",
-      "pupil": "CZERNIAK_SZYMON",
-      "chars": 0
     },
     {
       "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
