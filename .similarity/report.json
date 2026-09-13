@@ -1,5 +1,5 @@
 {
-  "generated": "b847ee3e96dffe65e9ac2ce53465ba3d3c3fe95e",
+  "generated": "b50b167eeef53c0a60457fbf40ca74de0a0b7938",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 52,
@@ -9,11 +9,6 @@
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 92
-    },
-    {
-      "path": "CZERNIAK_SZYMON/10_09_2026/shopping.py",
-      "pupil": "CZERNIAK_SZYMON",
-      "chars": 0
     },
     {
       "path": "FOKS_JAKUB/10_09_2026/email_parts.py",
