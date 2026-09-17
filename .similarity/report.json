@@ -1,14 +1,19 @@
 {
-  "generated": "c39aaf0835f414c3f6ce8a89ec9d7e0e4c35855e",
+  "generated": "bcfb13ce934428fedddb731593f5c2392a80b11e",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 68,
+  "fileCount": 70,
   "pupilCount": 15,
   "skipped": [
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
       "chars": 92
+    },
+    {
+      "path": "CYGAN_PAWEL/17_09_2026/week.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
     },
     {
       "path": "CZERNIAK_SZYMON/10_09_2026/email_parts.py",
