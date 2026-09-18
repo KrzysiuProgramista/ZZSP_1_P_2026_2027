@@ -1,8 +1,8 @@
 {
-  "generated": "aabd4602346ccf97e31eefe8a435f17a364e8dd7",
+  "generated": "929391b9c751e5170a3dcb0baf7769606e3069fa",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 80,
+  "fileCount": 84,
   "pupilCount": 15,
   "skipped": [
     {
@@ -293,6 +293,34 @@
     },
     {
       "pupils": [
+        "GOSS_LEON",
+        "SWIATOSLAV_TOMIUK"
+      ],
+      "paths": [
+        "GOSS_LEON/17_09_2026/matrix.py",
+        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.3838,
+      "text": 0.874,
+      "struct": 0.8637,
+      "chars": 239
+    },
+    {
+      "pupils": [
+        "CYGAN_PAWEL",
+        "SWIATOSLAV_TOMIUK"
+      ],
+      "paths": [
+        "CYGAN_PAWEL/17_09_2026/matrix.py",
+        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.3592,
+      "text": 0.8677,
+      "struct": 0.87,
+      "chars": 245
+    },
+    {
+      "pupils": [
         "FOKS_JAKUB",
         "WOJECH_ADAM"
       ],
@@ -330,34 +358,6 @@
       ],
       "jaccard": 0.3465,
       "text": 0.9685,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "FOKS_JAKUB",
-        "KMIEC_HUBERT"
-      ],
-      "paths": [
-        "FOKS_JAKUB/03_09_2026/about_me.py",
-        "KMIEC_HUBERT/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3398,
-      "text": 0.9609,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "FOKS_JAKUB",
-        "MICHALAK_PIOTR"
-      ],
-      "paths": [
-        "FOKS_JAKUB/03_09_2026/about_me.py",
-        "MICHALAK_PIOTR/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3398,
-      "text": 0.9609,
       "struct": 1.0,
       "chars": 123
     }
