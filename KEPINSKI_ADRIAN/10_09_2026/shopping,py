@@ -1,0 +1,7 @@
+product = input("name: ")
+price = float(input("price: "))
+quantity = int(input("quanity: "))
+
+total = price * quantity
+
+print(f"{quantity} x {product} = {total:.2f} PLN")
