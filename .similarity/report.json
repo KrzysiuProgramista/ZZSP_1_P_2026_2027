@@ -1,8 +1,8 @@
 {
-  "generated": "e00804600015da641e2eff139f3363e13b0a7b2f",
+  "generated": "171a6811cacd38f53dfe1932f123ae17a2ca0950",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 91,
+  "fileCount": 95,
   "pupilCount": 15,
   "skipped": [
     {
@@ -345,6 +345,20 @@
     },
     {
       "pupils": [
+        "LIALIUK_SERHII",
+        "SWIATOSLAV_TOMIUK"
+      ],
+      "paths": [
+        "LIALIUK_SERHII/17_09_2026/matrix.py",
+        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.4031,
+      "text": 0.7871,
+      "struct": 0.8756,
+      "chars": 229
+    },
+    {
+      "pupils": [
         "KEPINSKI_ADRIAN",
         "SOLTYSIAK_DOMINIK"
       ],
@@ -384,20 +398,6 @@
       "text": 0.8677,
       "struct": 0.87,
       "chars": 245
-    },
-    {
-      "pupils": [
-        "FOKS_JAKUB",
-        "WOJECH_ADAM"
-      ],
-      "paths": [
-        "FOKS_JAKUB/03_09_2026/about_me.py",
-        "WOJECH_ADAM/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3465,
-      "text": 0.9685,
-      "struct": 1.0,
-      "chars": 123
     }
   ]
 }
