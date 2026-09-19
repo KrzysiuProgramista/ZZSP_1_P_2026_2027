@@ -1,8 +1,8 @@
 {
-  "generated": "11dc0e75857119e4b28c2451509b5f047475fc98",
+  "generated": "e00804600015da641e2eff139f3363e13b0a7b2f",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 89,
+  "fileCount": 91,
   "pupilCount": 15,
   "skipped": [
     {
@@ -180,6 +180,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/10_09_2026/email_parts.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-19T15:06:51+02:00"
+      },
+      "earlier": {
+        "pupil": "SOLTYSIAK_DOMINIK",
+        "path": "SOLTYSIAK_DOMINIK/email.py",
+        "assignment": "(root)",
+        "added": "2026-09-13T17:47:57+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 107
     },
     {
       "sameCommit": false,
