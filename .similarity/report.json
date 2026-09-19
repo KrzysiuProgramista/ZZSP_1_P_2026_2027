@@ -1,8 +1,8 @@
 {
-  "generated": "9c9f9f13796575673574ecb45a254eb97253e2ae",
+  "generated": "11dc0e75857119e4b28c2451509b5f047475fc98",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 88,
+  "fileCount": 89,
   "pupilCount": 15,
   "skipped": [
     {
@@ -326,6 +326,20 @@
     },
     {
       "pupils": [
+        "KEPINSKI_ADRIAN",
+        "SOLTYSIAK_DOMINIK"
+      ],
+      "paths": [
+        "KEPINSKI_ADRIAN/10_09_2026/temperature.py",
+        "SOLTYSIAK_DOMINIK/temperaturaaa.py"
+      ],
+      "jaccard": 0.3869,
+      "text": 0.8599,
+      "struct": 0.9354,
+      "chars": 143
+    },
+    {
+      "pupils": [
         "GOSS_LEON",
         "SWIATOSLAV_TOMIUK"
       ],
@@ -359,20 +373,6 @@
       ],
       "paths": [
         "FOKS_JAKUB/03_09_2026/about_me.py",
-        "WOJECH_ADAM/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3465,
-      "text": 0.9685,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "GABARA_KAROL",
-        "WOJECH_ADAM"
-      ],
-      "paths": [
-        "GABARA_KAROL/03_09_2026/about_me.py",
         "WOJECH_ADAM/03_09_2026/about_me.py"
       ],
       "jaccard": 0.3465,
