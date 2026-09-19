@@ -1,8 +1,8 @@
 {
-  "generated": "929391b9c751e5170a3dcb0baf7769606e3069fa",
+  "generated": "9c9f9f13796575673574ecb45a254eb97253e2ae",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 84,
+  "fileCount": 88,
   "pupilCount": 15,
   "skipped": [
     {
@@ -218,9 +218,42 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 131
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T15:00:19+02:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-17T17:11:08+02:00"
+      },
+      "jaccard": 0.6879,
+      "text": 0.9094,
+      "struct": 0.8849,
+      "chars": 245
     }
   ],
   "notices": [
+    {
+      "pupils": [
+        "KEPINSKI_ADRIAN",
+        "SWIATOSLAV_TOMIUK"
+      ],
+      "paths": [
+        "KEPINSKI_ADRIAN/17_09_2026/matrix.py",
+        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.551,
+      "text": 0.9639,
+      "struct": 0.9646,
+      "chars": 269
+    },
     {
       "pupils": [
         "FOKS_JAKUB",
@@ -340,20 +373,6 @@
       ],
       "paths": [
         "GABARA_KAROL/03_09_2026/about_me.py",
-        "WOJECH_ADAM/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.3465,
-      "text": 0.9685,
-      "struct": 1.0,
-      "chars": 123
-    },
-    {
-      "pupils": [
-        "GOSS_LEON",
-        "WOJECH_ADAM"
-      ],
-      "paths": [
-        "GOSS_LEON/03_09_2026/about_me.py",
         "WOJECH_ADAM/03_09_2026/about_me.py"
       ],
       "jaccard": 0.3465,
