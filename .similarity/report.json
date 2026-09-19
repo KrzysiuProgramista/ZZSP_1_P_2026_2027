@@ -1,8 +1,8 @@
 {
-  "generated": "36f98574d37915c2681044dd54390ce66823a751",
+  "generated": "949c17f9d03f71eddff7abe4ba19b1b945c290e0",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 103,
+  "fileCount": 107,
   "pupilCount": 15,
   "skipped": [
     {
@@ -256,6 +256,44 @@
       "text": 0.9094,
       "struct": 0.8849,
       "chars": 245
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T22:41:43+02:00"
+      },
+      "earlier": {
+        "pupil": "WOJECH_ADAM",
+        "path": "WOJECH_ADAM/03_09_2026/17_09_2026/matrix.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-19T22:27:38+02:00"
+      },
+      "jaccard": 0.6456,
+      "text": 0.9751,
+      "struct": 1.0,
+      "chars": 241
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T22:41:43+02:00"
+      },
+      "earlier": {
+        "pupil": "WOJECH_ADAM",
+        "path": "WOJECH_ADAM/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T22:29:30+02:00"
+      },
+      "jaccard": 0.6456,
+      "text": 0.9751,
+      "struct": 1.0,
+      "chars": 241
     }
   ],
   "notices": [
@@ -272,6 +310,20 @@
       "text": 0.9639,
       "struct": 0.9646,
       "chars": 269
+    },
+    {
+      "pupils": [
+        "GOSS_LEON",
+        "MICHALAK_PIOTR"
+      ],
+      "paths": [
+        "GOSS_LEON/17_09_2026/week.py",
+        "MICHALAK_PIOTR/17_09_2026/week.py"
+      ],
+      "jaccard": 0.5,
+      "text": 0.8812,
+      "struct": 0.8921,
+      "chars": 127
     },
     {
       "pupils": [
@@ -317,6 +369,34 @@
     },
     {
       "pupils": [
+        "GOSS_LEON",
+        "MICHALAK_PIOTR"
+      ],
+      "paths": [
+        "GOSS_LEON/17_09_2026/matrix.py",
+        "MICHALAK_PIOTR/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.4494,
+      "text": 0.9792,
+      "struct": 0.9851,
+      "chars": 239
+    },
+    {
+      "pupils": [
+        "MICHALAK_PIOTR",
+        "SWIATOSLAV_TOMIUK"
+      ],
+      "paths": [
+        "MICHALAK_PIOTR/17_09_2026/matrix.py",
+        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.4301,
+      "text": 0.8863,
+      "struct": 0.8676,
+      "chars": 241
+    },
+    {
+      "pupils": [
         "SWIATOSLAV_TOMIUK",
         "WOJECH_ADAM"
       ],
@@ -356,48 +436,6 @@
       "text": 0.7871,
       "struct": 0.8756,
       "chars": 229
-    },
-    {
-      "pupils": [
-        "KEPINSKI_ADRIAN",
-        "SOLTYSIAK_DOMINIK"
-      ],
-      "paths": [
-        "KEPINSKI_ADRIAN/10_09_2026/temperature.py",
-        "SOLTYSIAK_DOMINIK/temperaturaaa.py"
-      ],
-      "jaccard": 0.3869,
-      "text": 0.8599,
-      "struct": 0.9354,
-      "chars": 143
-    },
-    {
-      "pupils": [
-        "GOSS_LEON",
-        "SWIATOSLAV_TOMIUK"
-      ],
-      "paths": [
-        "GOSS_LEON/17_09_2026/matrix.py",
-        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
-      ],
-      "jaccard": 0.3838,
-      "text": 0.874,
-      "struct": 0.8637,
-      "chars": 239
-    },
-    {
-      "pupils": [
-        "CYGAN_PAWEL",
-        "SWIATOSLAV_TOMIUK"
-      ],
-      "paths": [
-        "CYGAN_PAWEL/17_09_2026/matrix.py",
-        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
-      ],
-      "jaccard": 0.3592,
-      "text": 0.8677,
-      "struct": 0.87,
-      "chars": 245
     }
   ]
 }
