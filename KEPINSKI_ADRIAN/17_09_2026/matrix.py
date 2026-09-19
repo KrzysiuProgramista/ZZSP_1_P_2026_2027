@@ -1,0 +1,18 @@
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# row
+print(matrix[0])
+print(matrix[1])
+print(matrix[2])
+
+# diagonal
+print(matrix[0][0])
+print(matrix[1][1])
+print(matrix[2][2])
+
+
+print(matrix[0][0] + matrix[0][1] + matrix[0][2])
