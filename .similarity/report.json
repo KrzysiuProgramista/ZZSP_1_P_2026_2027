@@ -1,8 +1,8 @@
 {
-  "generated": "949c17f9d03f71eddff7abe4ba19b1b945c290e0",
+  "generated": "0c31474bcf11ee9688acd87f3aba1a938a99ea14",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 107,
+  "fileCount": 111,
   "pupilCount": 15,
   "skipped": [
     {
@@ -182,6 +182,25 @@
       "chars": 123
     },
     {
+      "sameCommit": true,
+      "later": {
+        "pupil": "SOLTYSIAK_DOMINIK",
+        "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/email.py",
+        "assignment": "Dominik_So\u0142tysik10_09_2026",
+        "added": null
+      },
+      "earlier": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/10_09_2026/email_parts.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-19T15:06:51+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 107
+    },
+    {
       "sameCommit": false,
       "later": {
         "pupil": "KEPINSKI_ADRIAN",
@@ -332,7 +351,35 @@
       ],
       "paths": [
         "FOKS_JAKUB/10_09_2026/temperature.py",
+        "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/temperaturaaa.py"
+      ],
+      "jaccard": 0.493,
+      "text": 0.9884,
+      "struct": 1.0,
+      "chars": 171
+    },
+    {
+      "pupils": [
+        "FOKS_JAKUB",
+        "SOLTYSIAK_DOMINIK"
+      ],
+      "paths": [
+        "FOKS_JAKUB/10_09_2026/temperature.py",
         "SOLTYSIAK_DOMINIK/temperaturaaa.py"
+      ],
+      "jaccard": 0.493,
+      "text": 0.9884,
+      "struct": 1.0,
+      "chars": 171
+    },
+    {
+      "pupils": [
+        "GABARA_KAROL",
+        "SOLTYSIAK_DOMINIK"
+      ],
+      "paths": [
+        "GABARA_KAROL/10_09_2026/temperature.py",
+        "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/temperaturaaa.py"
       ],
       "jaccard": 0.493,
       "text": 0.9884,
@@ -408,34 +455,6 @@
       "text": 0.9847,
       "struct": 1.0,
       "chars": 131
-    },
-    {
-      "pupils": [
-        "WALUSIAK_SEBASTIAN",
-        "WOJECH_ADAM"
-      ],
-      "paths": [
-        "WALUSIAK_SEBASTIAN/03_09_2026/about_me.py",
-        "WOJECH_ADAM/03_09_2026/about_me.py"
-      ],
-      "jaccard": 0.4118,
-      "text": 0.9847,
-      "struct": 1.0,
-      "chars": 131
-    },
-    {
-      "pupils": [
-        "LIALIUK_SERHII",
-        "SWIATOSLAV_TOMIUK"
-      ],
-      "paths": [
-        "LIALIUK_SERHII/17_09_2026/matrix.py",
-        "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py"
-      ],
-      "jaccard": 0.4031,
-      "text": 0.7871,
-      "struct": 0.8756,
-      "chars": 229
     }
   ]
 }

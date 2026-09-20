@@ -4,12 +4,11 @@ This file was written automatically by the `similarity` GitHub Action.
 It is **not** a decision or an accusation - it flags work for your
 teacher to look at, and your teacher decides what it means.
 
-Pupil folder: `KEPINSKI_ADRIAN`
+Pupil folder: `SOLTYSIAK_DOMINIK`
 
 | your file | similarity | length |
 |---|---|---|
-| `KEPINSKI_ADRIAN/10_09_2026/email_parts.py` | **100%** | 107 chars |
-| `KEPINSKI_ADRIAN/10_09_2026/email_parts.py` | **100%** | 107 chars |
+| `SOLTYSIAK_DOMINIK/Dominik_Sołtysik10_09_2026/email.py` | **100%** | 107 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 
