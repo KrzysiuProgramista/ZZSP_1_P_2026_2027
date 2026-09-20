@@ -1,8 +1,8 @@
 {
-  "generated": "bc132d1acdc0eef0ec643688c115fcabaf734924",
+  "generated": "48766ae4c9e2cb4910e3cb164ce186d7ed9ab822",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 115,
+  "fileCount": 116,
   "pupilCount": 15,
   "skipped": [
     {
@@ -454,15 +454,15 @@
     },
     {
       "pupils": [
-        "SWIATOSLAV_TOMIUK",
+        "SOLTYSIAK_DOMINIK",
         "WOJECH_ADAM"
       ],
       "paths": [
-        "SWIATOSLAV_TOMIUK/03_09_2026/about_me.py",
+        "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik03_09_2026/main.py",
         "WOJECH_ADAM/03_09_2026/about_me.py"
       ],
-      "jaccard": 0.4118,
-      "text": 0.9847,
+      "jaccard": 0.4175,
+      "text": 0.9924,
       "struct": 1.0,
       "chars": 131
     }
