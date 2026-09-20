@@ -1,8 +1,8 @@
 {
-  "generated": "c65ceb2937eeb6899f023a1e7f52f14e4f4898aa",
+  "generated": "3c148394e7d02e78a78639199be32769c9da700f",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 124,
+  "fileCount": 129,
   "pupilCount": 15,
   "skipped": [
     {
@@ -17,6 +17,11 @@
     },
     {
       "path": "CZERNIAK_SZYMON/10_09_2026/explaining.py",
+      "pupil": "CZERNIAK_SZYMON",
+      "chars": 0
+    },
+    {
+      "path": "CZERNIAK_SZYMON/17_09_2026/explaining.py",
       "pupil": "CZERNIAK_SZYMON",
       "chars": 0
     },
@@ -384,6 +389,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T14:46:53+02:00"
+      },
+      "earlier": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-18T19:13:39+02:00"
+      },
+      "jaccard": 0.6646,
+      "text": 0.9036,
+      "struct": 0.8756,
+      "chars": 229
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "JEDRZEJCZAK_ALEKSANDER",
         "path": "JEDRZEJCZAK_ALEKSANDER/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -456,6 +480,25 @@
       "text": 0.9751,
       "struct": 1.0,
       "chars": 241
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T14:46:53+02:00"
+      },
+      "earlier": {
+        "pupil": "LIALIUK_SERHII",
+        "path": "LIALIUK_SERHII/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T21:38:44+02:00"
+      },
+      "jaccard": 0.6053,
+      "text": 0.9563,
+      "struct": 1.0,
+      "chars": 229
     }
   ],
   "notices": [
@@ -587,17 +630,17 @@
     },
     {
       "pupils": [
-        "GOSS_LEON",
+        "CZERNIAK_SZYMON",
         "JEDRZEJCZAK_ALEKSANDER"
       ],
       "paths": [
-        "GOSS_LEON/17_09_2026/matrix.py",
+        "CZERNIAK_SZYMON/17_09_2026/matrix.py",
         "JEDRZEJCZAK_ALEKSANDER/17_09_2026/matrix.py"
       ],
-      "jaccard": 0.4494,
-      "text": 0.9792,
-      "struct": 0.9851,
-      "chars": 239
+      "jaccard": 0.4911,
+      "text": 0.9745,
+      "struct": 0.9855,
+      "chars": 229
     }
   ]
 }
