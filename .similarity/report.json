@@ -1,8 +1,8 @@
 {
-  "generated": "d89d3ea8bbde0acbb2558240c88c944b3734a5dd",
+  "generated": "58e3ca228bde7d99d3370599ec5fd129c1d5ca7f",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 141,
+  "fileCount": 145,
   "pupilCount": 15,
   "skipped": [
     {
@@ -349,6 +349,44 @@
       "chars": 241
     },
     {
+      "sameCommit": false,
+      "later": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T21:31:18+02:00"
+      },
+      "earlier": {
+        "pupil": "JEDRZEJCZAK_ALEKSANDER",
+        "path": "JEDRZEJCZAK_ALEKSANDER/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T08:01:44+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 241
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/17_09_2026/week.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T21:30:55+02:00"
+      },
+      "earlier": {
+        "pupil": "JEDRZEJCZAK_ALEKSANDER",
+        "path": "JEDRZEJCZAK_ALEKSANDER/17_09_2026/week.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T08:02:07+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 145
+    },
+    {
       "sameCommit": true,
       "later": {
         "pupil": "SOLTYSIAK_DOMINIK",
@@ -404,6 +442,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 133
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T21:31:18+02:00"
+      },
+      "earlier": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T22:41:43+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 241
     },
     {
       "sameCommit": false,
@@ -545,6 +602,44 @@
         "path": "MICHALAK_PIOTR/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
         "added": "2026-09-19T22:41:43+02:00"
+      },
+      "earlier": {
+        "pupil": "WOJECH_ADAM",
+        "path": "WOJECH_ADAM/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T22:29:30+02:00"
+      },
+      "jaccard": 0.6456,
+      "text": 0.9751,
+      "struct": 1.0,
+      "chars": 241
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T21:31:18+02:00"
+      },
+      "earlier": {
+        "pupil": "WOJECH_ADAM",
+        "path": "WOJECH_ADAM/03_09_2026/17_09_2026/matrix.py",
+        "assignment": "03_09_2026",
+        "added": "2026-09-19T22:27:38+02:00"
+      },
+      "jaccard": 0.6456,
+      "text": 0.9751,
+      "struct": 1.0,
+      "chars": 241
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T21:31:18+02:00"
       },
       "earlier": {
         "pupil": "WOJECH_ADAM",
