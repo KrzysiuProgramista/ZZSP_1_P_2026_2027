@@ -8,8 +8,7 @@ Pupil folder: `SOLTYSIAK_DOMINIK`
 
 | your file | similarity | length |
 |---|---|---|
-| `SOLTYSIAK_DOMINIK/Dominik_Sołtysik10_09_2026/temperaturaaa.py` | **100%** | 171 chars |
-| `SOLTYSIAK_DOMINIK/Dominik_Sołtysik10_09_2026/email.py` | **100%** | 107 chars |
+| `SOLTYSIAK_DOMINIK/Dominik_Sołtysik17_09_2026/grades.py` | **68%** | 195 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 
