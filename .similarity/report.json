@@ -1,8 +1,8 @@
 {
-  "generated": "3c148394e7d02e78a78639199be32769c9da700f",
+  "generated": "21b18bdd81e36883f1a18d20022565a9ba695eac",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 129,
+  "fileCount": 137,
   "pupilCount": 15,
   "skipped": [
     {
@@ -176,6 +176,82 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 175
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/17_09_2026/grades.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:21:20+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/17_09_2026/grades.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:17:57+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 169
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/17_09_2026/invetory.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:23:08+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/17_09_2026/inventory.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:18:59+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 249
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:22:32+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:18:42+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 248
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/17_09_2026/week.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:21:58+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/17_09_2026/week.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-20T15:18:21+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 123
     },
     {
       "sameCommit": false,
