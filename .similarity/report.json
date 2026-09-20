@@ -1,8 +1,8 @@
 {
-  "generated": "0c31474bcf11ee9688acd87f3aba1a938a99ea14",
+  "generated": "bc132d1acdc0eef0ec643688c115fcabaf734924",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 111,
+  "fileCount": 115,
   "pupilCount": 15,
   "skipped": [
     {
@@ -39,6 +39,16 @@
       "path": "LIALIUK_SERHII/10_09_2026/email_parts.py",
       "pupil": "LIALIUK_SERHII",
       "chars": 97
+    },
+    {
+      "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik17_09_2026/matrix.py",
+      "pupil": "SOLTYSIAK_DOMINIK",
+      "chars": 0
+    },
+    {
+      "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik17_09_2026/week.py",
+      "pupil": "SOLTYSIAK_DOMINIK",
+      "chars": 0
     },
     {
       "path": "STRZELECKI_ADAM/10_09_2026/email_parts.py",
