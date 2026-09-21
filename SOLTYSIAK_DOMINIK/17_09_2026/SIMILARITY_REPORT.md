@@ -4,17 +4,13 @@ This file was written automatically by the `similarity` GitHub Action.
 It is **not** a decision or an accusation - it flags work for your
 teacher to look at, and your teacher decides what it means.
 
-Pupil folder: `KEPINSKI_ADRIAN`
+Pupil folder: `SOLTYSIAK_DOMINIK`
 
 | your file | similarity | length |
 |---|---|---|
-| `KEPINSKI_ADRIAN/10_09_2026/email_parts.py` | **100%** | 107 chars |
-| `KEPINSKI_ADRIAN/10_09_2026/email_parts.py` | **100%** | 107 chars |
+| `SOLTYSIAK_DOMINIK/17_09_2026/grades.py` | **68%** | 195 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
-
-Both submissions arrived in the same commit, so nobody was 'first'. 
-This same note is in the other folder too - it is not pointing at you.
 
 ### What to do
 

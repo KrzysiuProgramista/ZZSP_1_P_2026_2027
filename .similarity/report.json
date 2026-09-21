@@ -1,8 +1,8 @@
 {
-  "generated": "58e3ca228bde7d99d3370599ec5fd129c1d5ca7f",
+  "generated": "9799a30e542775b6772f0bb2b61c81ae5c8a2d18",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 145,
+  "fileCount": 141,
   "pupilCount": 15,
   "skipped": [
     {
@@ -46,12 +46,12 @@
       "chars": 97
     },
     {
-      "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik17_09_2026/matrix.py",
+      "path": "SOLTYSIAK_DOMINIK/17_09_2026/matrix.py",
       "pupil": "SOLTYSIAK_DOMINIK",
       "chars": 0
     },
     {
-      "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik17_09_2026/week.py",
+      "path": "SOLTYSIAK_DOMINIK/17_09_2026/week.py",
       "pupil": "SOLTYSIAK_DOMINIK",
       "chars": 0
     },
@@ -292,37 +292,18 @@
       "chars": 152
     },
     {
-      "sameCommit": true,
-      "later": {
-        "pupil": "SOLTYSIAK_DOMINIK",
-        "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/temperaturaaa.py",
-        "assignment": "Dominik_So\u0142tysik10_09_2026",
-        "added": null
-      },
-      "earlier": {
-        "pupil": "JEDRZEJCZAK_ALEKSANDER",
-        "path": "JEDRZEJCZAK_ALEKSANDER/10_09_2026/temperature.py",
-        "assignment": "10_09_2026",
-        "added": "2026-09-20T08:04:57+02:00"
-      },
-      "jaccard": 1.0,
-      "text": 1.0,
-      "struct": 1.0,
-      "chars": 171
-    },
-    {
       "sameCommit": false,
       "later": {
+        "pupil": "SOLTYSIAK_DOMINIK",
+        "path": "SOLTYSIAK_DOMINIK/10_09_2026/temperaturaaa.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-21T19:51:48+02:00"
+      },
+      "earlier": {
         "pupil": "JEDRZEJCZAK_ALEKSANDER",
         "path": "JEDRZEJCZAK_ALEKSANDER/10_09_2026/temperature.py",
         "assignment": "10_09_2026",
         "added": "2026-09-20T08:04:57+02:00"
-      },
-      "earlier": {
-        "pupil": "SOLTYSIAK_DOMINIK",
-        "path": "SOLTYSIAK_DOMINIK/temperaturaaa.py",
-        "assignment": "(root)",
-        "added": "2026-09-13T17:47:57+02:00"
       },
       "jaccard": 1.0,
       "text": 1.0,
@@ -387,37 +368,18 @@
       "chars": 145
     },
     {
-      "sameCommit": true,
-      "later": {
-        "pupil": "SOLTYSIAK_DOMINIK",
-        "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/email.py",
-        "assignment": "Dominik_So\u0142tysik10_09_2026",
-        "added": null
-      },
-      "earlier": {
-        "pupil": "KEPINSKI_ADRIAN",
-        "path": "KEPINSKI_ADRIAN/10_09_2026/email_parts.py",
-        "assignment": "10_09_2026",
-        "added": "2026-09-19T15:06:51+02:00"
-      },
-      "jaccard": 1.0,
-      "text": 1.0,
-      "struct": 1.0,
-      "chars": 107
-    },
-    {
       "sameCommit": false,
       "later": {
+        "pupil": "SOLTYSIAK_DOMINIK",
+        "path": "SOLTYSIAK_DOMINIK/10_09_2026/email.py",
+        "assignment": "10_09_2026",
+        "added": "2026-09-21T19:51:48+02:00"
+      },
+      "earlier": {
         "pupil": "KEPINSKI_ADRIAN",
         "path": "KEPINSKI_ADRIAN/10_09_2026/email_parts.py",
         "assignment": "10_09_2026",
         "added": "2026-09-19T15:06:51+02:00"
-      },
-      "earlier": {
-        "pupil": "SOLTYSIAK_DOMINIK",
-        "path": "SOLTYSIAK_DOMINIK/email.py",
-        "assignment": "(root)",
-        "added": "2026-09-13T17:47:57+02:00"
       },
       "jaccard": 1.0,
       "text": 1.0,
@@ -501,12 +463,12 @@
       "chars": 245
     },
     {
-      "sameCommit": true,
+      "sameCommit": false,
       "later": {
         "pupil": "SOLTYSIAK_DOMINIK",
-        "path": "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik17_09_2026/grades.py",
-        "assignment": "Dominik_So\u0142tysik17_09_2026",
-        "added": null
+        "path": "SOLTYSIAK_DOMINIK/17_09_2026/grades.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-21T19:53:20+02:00"
       },
       "earlier": {
         "pupil": "JEDRZEJCZAK_ALEKSANDER",
@@ -722,21 +684,7 @@
       ],
       "paths": [
         "FOKS_JAKUB/10_09_2026/temperature.py",
-        "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/temperaturaaa.py"
-      ],
-      "jaccard": 0.493,
-      "text": 0.9884,
-      "struct": 1.0,
-      "chars": 171
-    },
-    {
-      "pupils": [
-        "FOKS_JAKUB",
-        "SOLTYSIAK_DOMINIK"
-      ],
-      "paths": [
-        "FOKS_JAKUB/10_09_2026/temperature.py",
-        "SOLTYSIAK_DOMINIK/temperaturaaa.py"
+        "SOLTYSIAK_DOMINIK/10_09_2026/temperaturaaa.py"
       ],
       "jaccard": 0.493,
       "text": 0.9884,
@@ -764,21 +712,7 @@
       ],
       "paths": [
         "GABARA_KAROL/10_09_2026/temperature.py",
-        "SOLTYSIAK_DOMINIK/Dominik_So\u0142tysik10_09_2026/temperaturaaa.py"
-      ],
-      "jaccard": 0.493,
-      "text": 0.9884,
-      "struct": 1.0,
-      "chars": 171
-    },
-    {
-      "pupils": [
-        "GABARA_KAROL",
-        "SOLTYSIAK_DOMINIK"
-      ],
-      "paths": [
-        "GABARA_KAROL/10_09_2026/temperature.py",
-        "SOLTYSIAK_DOMINIK/temperaturaaa.py"
+        "SOLTYSIAK_DOMINIK/10_09_2026/temperaturaaa.py"
       ],
       "jaccard": 0.493,
       "text": 0.9884,
@@ -807,6 +741,34 @@
       "paths": [
         "CZERNIAK_SZYMON/17_09_2026/matrix.py",
         "JEDRZEJCZAK_ALEKSANDER/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.4911,
+      "text": 0.9745,
+      "struct": 0.9855,
+      "chars": 229
+    },
+    {
+      "pupils": [
+        "CZERNIAK_SZYMON",
+        "MICHALAK_PIOTR"
+      ],
+      "paths": [
+        "CZERNIAK_SZYMON/17_09_2026/matrix.py",
+        "MICHALAK_PIOTR/17_09_2026/matrix.py"
+      ],
+      "jaccard": 0.4911,
+      "text": 0.9745,
+      "struct": 0.9855,
+      "chars": 229
+    },
+    {
+      "pupils": [
+        "CZERNIAK_SZYMON",
+        "STRZELECKI_ADAM"
+      ],
+      "paths": [
+        "CZERNIAK_SZYMON/17_09_2026/matrix.py",
+        "STRZELECKI_ADAM/17_09_2026/matrix.py"
       ],
       "jaccard": 0.4911,
       "text": 0.9745,

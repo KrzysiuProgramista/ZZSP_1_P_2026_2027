@@ -9,13 +9,8 @@ Pupil folder: `JEDRZEJCZAK_ALEKSANDER`
 | your file | similarity | length |
 |---|---|---|
 | `JEDRZEJCZAK_ALEKSANDER/10_09_2026/password_check.py` | **100%** | 152 chars |
-| `JEDRZEJCZAK_ALEKSANDER/10_09_2026/temperature.py` | **100%** | 171 chars |
-| `JEDRZEJCZAK_ALEKSANDER/10_09_2026/temperature.py` | **100%** | 171 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
-
-Both submissions arrived in the same commit, so nobody was 'first'. 
-This same note is in the other folder too - it is not pointing at you.
 
 ### What to do
 
