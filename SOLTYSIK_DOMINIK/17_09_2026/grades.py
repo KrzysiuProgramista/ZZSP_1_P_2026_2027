@@ -4,4 +4,5 @@ print("Highest:", max(grades))
 print("Lowest:", min(grades))
 print("Average:", sum(grades) / len(grades))
 
+
 print("Best to worst:", sorted(grades, reverse=True))
