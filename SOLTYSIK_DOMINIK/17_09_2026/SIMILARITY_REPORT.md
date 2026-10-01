@@ -4,11 +4,11 @@ This file was written automatically by the `similarity` GitHub Action.
 It is **not** a decision or an accusation - it flags work for your
 teacher to look at, and your teacher decides what it means.
 
-Pupil folder: `SOLTYSIAK_DOMINIK`
+Pupil folder: `SOLTYSIK_DOMINIK`
 
 | your file | similarity | length |
 |---|---|---|
-| `SOLTYSIAK_DOMINIK/17_09_2026/grades.py` | **68%** | 195 chars |
+| `SOLTYSIK_DOMINIK/17_09_2026/grades.py` | **68%** | 195 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 
