@@ -1,8 +1,8 @@
 {
-  "generated": "b24a3107142aabd03e6b8811a32b9d51af83fd3d",
+  "generated": "794c085346ec2e78f0d164c0632fb3a2bd9395ba",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 143,
+  "fileCount": 144,
   "pupilCount": 15,
   "skipped": [
     {
@@ -44,6 +44,11 @@
       "path": "LIALIUK_SERHII/10_09_2026/email_parts.py",
       "pupil": "LIALIUK_SERHII",
       "chars": 97
+    },
+    {
+      "path": "SOLTYSIK_DOMINIK/01_10_2026/ticket_price.py",
+      "pupil": "SOLTYSIK_DOMINIK",
+      "chars": 0
     },
     {
       "path": "SOLTYSIK_DOMINIK/17_09_2026/matrix.py",
