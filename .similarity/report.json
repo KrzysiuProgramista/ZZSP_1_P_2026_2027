@@ -1,8 +1,8 @@
 {
-  "generated": "e029b81b9a028402d5ad09d746f3d71aad0d0b8d",
+  "generated": "61248cc7ad7ee8c0d1ffb1e14856e83438d74a84",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 161,
+  "fileCount": 163,
   "pupilCount": 15,
   "skipped": [
     {
@@ -44,11 +44,6 @@
       "path": "LIALIUK_SERHII/10_09_2026/email_parts.py",
       "pupil": "LIALIUK_SERHII",
       "chars": 97
-    },
-    {
-      "path": "SOLTYSIK_DOMINIK/01_10_2026/ticket_price.py",
-      "pupil": "SOLTYSIK_DOMINIK",
-      "chars": 0
     },
     {
       "path": "SOLTYSIK_DOMINIK/17_09_2026/matrix.py",
@@ -656,6 +651,20 @@
     },
     {
       "pupils": [
+        "SOLTYSIK_DOMINIK",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "SOLTYSIK_DOMINIK/01_10_2026/triangle.py",
+        "WOJECH_ADAM/01_10_2026/triangle.py"
+      ],
+      "jaccard": 0.5368,
+      "text": 0.9004,
+      "struct": 0.8791,
+      "chars": 261
+    },
+    {
+      "pupils": [
         "GOSS_LEON",
         "MICHALAK_PIOTR"
       ],
@@ -760,20 +769,6 @@
       "paths": [
         "CZERNIAK_SZYMON/17_09_2026/matrix.py",
         "MICHALAK_PIOTR/17_09_2026/matrix.py"
-      ],
-      "jaccard": 0.4911,
-      "text": 0.9745,
-      "struct": 0.9855,
-      "chars": 229
-    },
-    {
-      "pupils": [
-        "CZERNIAK_SZYMON",
-        "STRZELECKI_ADAM"
-      ],
-      "paths": [
-        "CZERNIAK_SZYMON/17_09_2026/matrix.py",
-        "STRZELECKI_ADAM/17_09_2026/matrix.py"
       ],
       "jaccard": 0.4911,
       "text": 0.9745,
