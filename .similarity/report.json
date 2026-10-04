@@ -1,8 +1,8 @@
 {
-  "generated": "5c51044cad4a9a61fe551aa27e9166755de88594",
+  "generated": "1ddc47a7ae1fe7ed5272be92ca50db3e64194715",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 166,
+  "fileCount": 169,
   "pupilCount": 15,
   "skipped": [
     {
@@ -252,6 +252,44 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/01__10_2026/rock_paper_scissors.py",
+        "assignment": "01__10_2026",
+        "added": "2026-10-04T14:49:02+02:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/01_10_2026/rock_paper_scissors.py",
+        "assignment": "01_10_2026",
+        "added": "2026-10-01T16:38:51+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 341
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/01__10_2026/ticket_price.py",
+        "assignment": "01__10_2026",
+        "added": "2026-10-04T14:44:09+02:00"
+      },
+      "earlier": {
+        "pupil": "SOLTYSIK_DOMINIK",
+        "path": "SOLTYSIK_DOMINIK/01_10_2026/ticket_price.py",
+        "assignment": "01_10_2026",
+        "added": "2026-10-01T09:55:58+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 137
     },
     {
       "sameCommit": false,
