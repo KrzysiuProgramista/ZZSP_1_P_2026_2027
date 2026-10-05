@@ -1,8 +1,8 @@
 {
-  "generated": "14264d316ae28165d5c89d6aa0465016b0e0ef58",
+  "generated": "bddf12d1b01e3946e44d4e9867c8f1285c35d70e",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 177,
+  "fileCount": 180,
   "pupilCount": 15,
   "skipped": [
     {
@@ -518,6 +518,25 @@
       "text": 0.9495,
       "struct": 1.0,
       "chars": 195
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/01_10_2026/ticket_price.py",
+        "assignment": "01_10_2026",
+        "added": "2026-10-05T18:29:07+02:00"
+      },
+      "earlier": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/01_10_2026/ticket_price.py",
+        "assignment": "01_10_2026",
+        "added": "2026-10-03T18:38:44+02:00"
+      },
+      "jaccard": 0.6667,
+      "text": 0.9608,
+      "struct": 0.9443,
+      "chars": 148
     },
     {
       "sameCommit": false,
