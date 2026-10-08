@@ -1,0 +1,10 @@
+numbers=[12,7,19,25,4,32,8,15]
+print("Max:",max(numbers))
+print("Min:",min(numbers))
+print("Average:",sum(numbers)/ len(numbers))
+print("Sorted:", sorted(numbers,reverse=True))
+print("First three:", numbers[0:3])
+print("Last three:", numbers[-3:])
+numbers.insert(0,100)
+numbers.pop()
+print("Modified:", numbers)
