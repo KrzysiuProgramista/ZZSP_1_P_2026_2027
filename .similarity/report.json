@@ -1,20 +1,10 @@
 {
-  "generated": "e956afed4b3798c5e914f3964ac1ea6a9c6c024f",
+  "generated": "b4ce34fd9640a6bf881fc5f6395c71965fa3acf8",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 191,
+  "fileCount": 243,
   "pupilCount": 15,
   "skipped": [
-    {
-      "path": "CYGAN_PAWEL/08_10_2026/TASK_4.py",
-      "pupil": "CYGAN_PAWEL",
-      "chars": 0
-    },
-    {
-      "path": "CYGAN_PAWEL/08_10_2026/TASK_5.py",
-      "pupil": "CYGAN_PAWEL",
-      "chars": 0
-    },
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
@@ -44,6 +34,16 @@
       "path": "GABARA_KAROL/10_09_2026/email_parts.py",
       "pupil": "GABARA_KAROL",
       "chars": 95
+    },
+    {
+      "path": "GABARA_KAROL/8_10_2026/task5.py",
+      "pupil": "GABARA_KAROL",
+      "chars": 0
+    },
+    {
+      "path": "GOSS_LEON/08_10_2026/task_5.py",
+      "pupil": "GOSS_LEON",
+      "chars": 13
     },
     {
       "path": "GOSS_LEON/10_09_2026/email_parts.py",
@@ -86,12 +86,36 @@
       "chars": 92
     },
     {
+      "path": "WOJECH_ADAM/08_10_2026/task_1.py",
+      "pupil": "WOJECH_ADAM",
+      "chars": 95
+    },
+    {
       "path": "WOJECH_ADAM/10_09_2026/email_parts.py",
       "pupil": "WOJECH_ADAM",
       "chars": 91
     }
   ],
   "flagged": [
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/08_10_2026/task_2.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:58:10+02:00"
+      },
+      "earlier": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/08_10_2026/task_2.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:57:06+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 259
+    },
     {
       "sameCommit": false,
       "later": {
@@ -494,6 +518,63 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "LIALIUK_SERHII",
+        "path": "LIALIUK_SERHII/08_10_2026 (Sprawdzian 1)/Task1.py",
+        "assignment": "08_10_2026 (Sprawdzian 1)",
+        "added": "2026-10-08T08:52:07+02:00"
+      },
+      "earlier": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/08_10_2026/task_1.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:32:19+02:00"
+      },
+      "jaccard": 0.9398,
+      "text": 0.9934,
+      "struct": 1.0,
+      "chars": 150
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/8_10_2026/task4.py",
+        "assignment": "8_10_2026",
+        "added": "2026-10-08T08:39:08+02:00"
+      },
+      "earlier": {
+        "pupil": "SOLTYSIK_DOMINIK",
+        "path": "SOLTYSIK_DOMINIK/08_10_2026/task4.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:27:25+02:00"
+      },
+      "jaccard": 0.7639,
+      "text": 0.9669,
+      "struct": 0.9618,
+      "chars": 321
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/08_10_2026/task_4.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:58:07+02:00"
+      },
+      "earlier": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/8_10_2026/task4.py",
+        "assignment": "8_10_2026",
+        "added": "2026-10-08T08:39:08+02:00"
+      },
+      "jaccard": 0.7467,
+      "text": 0.9812,
+      "struct": 1.0,
+      "chars": 317
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "KEPINSKI_ADRIAN",
         "path": "KEPINSKI_ADRIAN/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -684,6 +765,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "KMIEC_HUBERT",
+        "path": "KMIEC_HUBERT/08_10_2026/task_2.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:42:17+02:00"
+      },
+      "earlier": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/8_10_2026/task2.py",
+        "assignment": "8_10_2026",
+        "added": "2026-10-08T08:39:08+02:00"
+      },
+      "jaccard": 0.6256,
+      "text": 0.9683,
+      "struct": 0.9579,
+      "chars": 246
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "CZERNIAK_SZYMON",
         "path": "CZERNIAK_SZYMON/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -702,6 +802,20 @@
     }
   ],
   "notices": [
+    {
+      "pupils": [
+        "CZERNIAK_SZYMON",
+        "SOLTYSIK_DOMINIK"
+      ],
+      "paths": [
+        "CZERNIAK_SZYMON/08_10_2026/task_4.py",
+        "SOLTYSIK_DOMINIK/08_10_2026/task4.py"
+      ],
+      "jaccard": 0.5654,
+      "text": 0.9485,
+      "struct": 0.9618,
+      "chars": 317
+    },
     {
       "pupils": [
         "KEPINSKI_ADRIAN",
@@ -822,20 +936,6 @@
       "paths": [
         "CZERNIAK_SZYMON/17_09_2026/matrix.py",
         "JEDRZEJCZAK_ALEKSANDER/17_09_2026/matrix.py"
-      ],
-      "jaccard": 0.4911,
-      "text": 0.9745,
-      "struct": 0.9855,
-      "chars": 229
-    },
-    {
-      "pupils": [
-        "CZERNIAK_SZYMON",
-        "MICHALAK_PIOTR"
-      ],
-      "paths": [
-        "CZERNIAK_SZYMON/17_09_2026/matrix.py",
-        "MICHALAK_PIOTR/17_09_2026/matrix.py"
       ],
       "jaccard": 0.4911,
       "text": 0.9745,
