@@ -1,10 +1,25 @@
 {
-  "generated": "06e6d162c424e2bb8542edee6562ac0df36071c0",
+  "generated": "cabf40a473ed76c5da97052b73515cdd335b4215",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 183,
+  "fileCount": 190,
   "pupilCount": 15,
   "skipped": [
+    {
+      "path": "CYGAN_PAWEL/08_10_2026/TASK_3.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
+    },
+    {
+      "path": "CYGAN_PAWEL/08_10_2026/TASK_4.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
+    },
+    {
+      "path": "CYGAN_PAWEL/08_10_2026/TASK_5.py",
+      "pupil": "CYGAN_PAWEL",
+      "chars": 0
+    },
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
       "pupil": "CYGAN_PAWEL",
