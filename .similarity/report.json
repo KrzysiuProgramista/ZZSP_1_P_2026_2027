@@ -1,15 +1,10 @@
 {
-  "generated": "cabf40a473ed76c5da97052b73515cdd335b4215",
+  "generated": "e956afed4b3798c5e914f3964ac1ea6a9c6c024f",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 190,
+  "fileCount": 191,
   "pupilCount": 15,
   "skipped": [
-    {
-      "path": "CYGAN_PAWEL/08_10_2026/TASK_3.py",
-      "pupil": "CYGAN_PAWEL",
-      "chars": 0
-    },
     {
       "path": "CYGAN_PAWEL/08_10_2026/TASK_4.py",
       "pupil": "CYGAN_PAWEL",
