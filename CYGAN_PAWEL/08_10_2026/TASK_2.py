@@ -1,1 +1,6 @@
-
+sentence = input("Enter a random sentence: ")
+print(len(sentence))
+print(sentence.upper())
+print(len(sentence.split()))
+print(sentence.split()[0],sentence.split()[-1])
+print(sentence.replace(" ","_"))
