@@ -1,0 +1,10 @@
+inp = input("give me sentence ")
+print(len(inp))
+print(inp.upper())
+print(inp.split())
+sl = inp.split()
+print(len(sl))
+if len(sl) > 0:
+    print(sl[0], sl[-1])
+else: print("not enough words")
+print(inp.replace(' ','_'))
