@@ -1,0 +1,12 @@
+list = [21, 13, 57, 90, 26, 67, 53, 97]
+print(max(list))
+print(min(list))
+print(sum(list) // len(list))
+print(list[0:3])
+print(list[-3::])
+list.insert(0, 54)
+print(list)
+print(list.remove(97))
+print(list)
+list.sort(reverse=True)
+print(list)
