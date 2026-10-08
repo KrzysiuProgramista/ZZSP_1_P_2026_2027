@@ -1,0 +1,6 @@
+sentence = input("give me a sentence: ")
+print(len(sentence))
+print(sentence.upper())
+words = sentence.split()
+print(words[0], words[-1])
+print(sentence.replace(" ", "_"))
