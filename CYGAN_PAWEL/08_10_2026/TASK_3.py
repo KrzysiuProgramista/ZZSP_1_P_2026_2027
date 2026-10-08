@@ -1,1 +1,10 @@
-
+numbers = [1,22,31,8,5,65,29,90]
+print(min(numbers),max(numbers),(sum(numbers) / len(numbers)))
+sorted = numbers.copy()
+sorted.sort(reverse=True)
+print(sorted)
+print(numbers[0:3])
+print(numbers[-3:])
+numbers.insert(0,int("99"))
+numbers.pop(-1)
+print(numbers)
