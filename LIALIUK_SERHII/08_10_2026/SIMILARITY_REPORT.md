@@ -8,7 +8,7 @@ Pupil folder: `LIALIUK_SERHII`
 
 | your file | similarity | length |
 |---|---|---|
-| `LIALIUK_SERHII/08_10_2026 (Sprawdzian 1)/Task1.py` | **94%** | 150 chars |
+| `LIALIUK_SERHII/08_10_2026/Task1.py` | **94%** | 150 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 

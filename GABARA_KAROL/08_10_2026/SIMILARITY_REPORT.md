@@ -8,7 +8,9 @@ Pupil folder: `GABARA_KAROL`
 
 | your file | similarity | length |
 |---|---|---|
-| `GABARA_KAROL/8_10_2026/task4.py` | **76%** | 321 chars |
+| `GABARA_KAROL/08_10_2026/task4.py` | **76%** | 321 chars |
+| `GABARA_KAROL/08_10_2026/task4.py` | **75%** | 321 chars |
+| `GABARA_KAROL/08_10_2026/task2.py` | **63%** | 258 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 

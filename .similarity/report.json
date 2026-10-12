@@ -1,5 +1,5 @@
 {
-  "generated": "b4ce34fd9640a6bf881fc5f6395c71965fa3acf8",
+  "generated": "5bfa07c51c0d624c34a418d82060ebad7f8900fa",
   "minChars": 100,
   "threshold": 0.6,
   "fileCount": 243,
@@ -31,14 +31,14 @@
       "chars": 95
     },
     {
+      "path": "GABARA_KAROL/08_10_2026/task5.py",
+      "pupil": "GABARA_KAROL",
+      "chars": 0
+    },
+    {
       "path": "GABARA_KAROL/10_09_2026/email_parts.py",
       "pupil": "GABARA_KAROL",
       "chars": 95
-    },
-    {
-      "path": "GABARA_KAROL/8_10_2026/task5.py",
-      "pupil": "GABARA_KAROL",
-      "chars": 0
     },
     {
       "path": "GOSS_LEON/08_10_2026/task_5.py",
@@ -519,9 +519,9 @@
       "sameCommit": false,
       "later": {
         "pupil": "LIALIUK_SERHII",
-        "path": "LIALIUK_SERHII/08_10_2026 (Sprawdzian 1)/Task1.py",
-        "assignment": "08_10_2026 (Sprawdzian 1)",
-        "added": "2026-10-08T08:52:07+02:00"
+        "path": "LIALIUK_SERHII/08_10_2026/Task1.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-12T08:08:16+02:00"
       },
       "earlier": {
         "pupil": "SWIATOSLAV_TOMIUK",
@@ -538,9 +538,9 @@
       "sameCommit": false,
       "later": {
         "pupil": "GABARA_KAROL",
-        "path": "GABARA_KAROL/8_10_2026/task4.py",
-        "assignment": "8_10_2026",
-        "added": "2026-10-08T08:39:08+02:00"
+        "path": "GABARA_KAROL/08_10_2026/task4.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-12T08:08:16+02:00"
       },
       "earlier": {
         "pupil": "SOLTYSIK_DOMINIK",
@@ -556,16 +556,16 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/08_10_2026/task4.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-12T08:08:16+02:00"
+      },
+      "earlier": {
         "pupil": "CZERNIAK_SZYMON",
         "path": "CZERNIAK_SZYMON/08_10_2026/task_4.py",
         "assignment": "08_10_2026",
         "added": "2026-10-08T08:58:07+02:00"
-      },
-      "earlier": {
-        "pupil": "GABARA_KAROL",
-        "path": "GABARA_KAROL/8_10_2026/task4.py",
-        "assignment": "8_10_2026",
-        "added": "2026-10-08T08:39:08+02:00"
       },
       "jaccard": 0.7467,
       "text": 0.9812,
@@ -765,16 +765,16 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/08_10_2026/task2.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-12T08:08:16+02:00"
+      },
+      "earlier": {
         "pupil": "KMIEC_HUBERT",
         "path": "KMIEC_HUBERT/08_10_2026/task_2.py",
         "assignment": "08_10_2026",
         "added": "2026-10-08T08:42:17+02:00"
-      },
-      "earlier": {
-        "pupil": "GABARA_KAROL",
-        "path": "GABARA_KAROL/8_10_2026/task2.py",
-        "assignment": "8_10_2026",
-        "added": "2026-10-08T08:39:08+02:00"
       },
       "jaccard": 0.6256,
       "text": 0.9683,
