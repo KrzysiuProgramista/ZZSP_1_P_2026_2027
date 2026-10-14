@@ -1,8 +1,8 @@
 {
-  "generated": "5bfa07c51c0d624c34a418d82060ebad7f8900fa",
+  "generated": "8b90bc308039c6846c9af7a3ccfc3b4bde3696c6",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 243,
+  "fileCount": 248,
   "pupilCount": 15,
   "skipped": [
     {
@@ -476,6 +476,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 133
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "WALUSIAK_SEBASTIAN",
+        "path": "WALUSIAK_SEBASTIAN/08_10_2026/task_1.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-14T23:32:00+02:00"
+      },
+      "earlier": {
+        "pupil": "KMIEC_HUBERT",
+        "path": "KMIEC_HUBERT/08_10_2026/task_1.py",
+        "assignment": "08_10_2026",
+        "added": "2026-10-08T08:42:17+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 0.9941,
+      "struct": 1.0,
+      "chars": 168
     },
     {
       "sameCommit": false,
