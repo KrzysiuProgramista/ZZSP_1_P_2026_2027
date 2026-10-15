@@ -1,0 +1,6 @@
+text = input("say something")
+words = text.split()
+print("Length :", len(text))
+print("uppercase: ", text.upper())
+print("num of words : ", len(words))
+print(text.replace(" ", "_"))
