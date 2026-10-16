@@ -1,8 +1,8 @@
 {
-  "generated": "60bdbfad20c6e1acc82476d841ca843c3f7608f1",
+  "generated": "06ec83b662324bb426d311210bdb8ab2329b1b49",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 271,
+  "fileCount": 277,
   "pupilCount": 15,
   "skipped": [
     {
@@ -54,6 +54,11 @@
       "path": "GOSS_LEON/15_10_2026/countdown.py",
       "pupil": "GOSS_LEON",
       "chars": 96
+    },
+    {
+      "path": "KMIEC_HUBERT/15_10_2026/countdown.py",
+      "pupil": "KMIEC_HUBERT",
+      "chars": 86
     },
     {
       "path": "LIALIUK_SERHII/10_09_2026/email_parts.py",
