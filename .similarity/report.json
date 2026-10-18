@@ -1,8 +1,8 @@
 {
-  "generated": "b890aedab70c71252e40a035dcd4bcc630e7cb15",
+  "generated": "82c67d074939d395e99021828e2dafbdd6b8f979",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 294,
+  "fileCount": 300,
   "pupilCount": 15,
   "skipped": [
     {
@@ -84,6 +84,11 @@
       "path": "STRZELECKI_ADAM/10_09_2026/email_parts.py",
       "pupil": "STRZELECKI_ADAM",
       "chars": 91
+    },
+    {
+      "path": "STRZELECKI_ADAM/15_10_2026/countdown.py",
+      "pupil": "STRZELECKI_ADAM",
+      "chars": 86
     },
     {
       "path": "SWIATOSLAV_TOMIUK/10_09_2026/3.py",
