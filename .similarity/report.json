@@ -1,8 +1,8 @@
 {
-  "generated": "738a1cdf769b68e8aa9604d82da23d31eb94979e",
+  "generated": "fac730a73e08dc5b1b2be32426ec814f191c585b",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 306,
+  "fileCount": 312,
   "pupilCount": 15,
   "skipped": [
     {
@@ -59,6 +59,11 @@
       "path": "GOSS_LEON/15_10_2026/countdown.py",
       "pupil": "GOSS_LEON",
       "chars": 96
+    },
+    {
+      "path": "KEPINSKI_ADRIAN/15_10_2026/countdown.py",
+      "pupil": "KEPINSKI_ADRIAN",
+      "chars": 0
     },
     {
       "path": "KMIEC_HUBERT/15_10_2026/countdown.py",
@@ -206,6 +211,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-21T19:26:50+02:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-16T19:04:22+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 137
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "LIALIUK_SERHII",
         "path": "LIALIUK_SERHII/15_10_2026/pyramid.py",
         "assignment": "15_10_2026",
@@ -267,6 +291,25 @@
         "path": "FOKS_JAKUB/15_10_2026/pyramid.py",
         "assignment": "15_10_2026",
         "added": "2026-10-18T22:26:38+02:00"
+      },
+      "earlier": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-18T16:12:10+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 137
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-21T19:26:50+02:00"
       },
       "earlier": {
         "pupil": "CZERNIAK_SZYMON",
@@ -392,6 +435,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 175
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-21T19:26:50+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-18T22:26:38+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 137
     },
     {
       "sameCommit": false,
@@ -662,6 +724,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-21T19:26:50+02:00"
+      },
+      "earlier": {
+        "pupil": "LIALIUK_SERHII",
+        "path": "LIALIUK_SERHII/15_10_2026/pyramid.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-19T10:01:49+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 137
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "MICHALAK_PIOTR",
         "path": "MICHALAK_PIOTR/03_09_2026/about_me.py",
         "assignment": "03_09_2026",
@@ -772,6 +853,25 @@
       "text": 0.9669,
       "struct": 0.9618,
       "chars": 321
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/15_10_2026/collatz.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-21T19:26:50+02:00"
+      },
+      "earlier": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/15_10_2026/collatz.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-18T22:27:28+02:00"
+      },
+      "jaccard": 0.7523,
+      "text": 0.8877,
+      "struct": 0.8961,
+      "chars": 162
     },
     {
       "sameCommit": false,
