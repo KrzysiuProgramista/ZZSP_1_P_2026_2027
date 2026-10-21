@@ -1,8 +1,8 @@
 {
-  "generated": "fac730a73e08dc5b1b2be32426ec814f191c585b",
+  "generated": "3825679e5c9bea66ddb86295e40fb93e4419f60e",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 312,
+  "fileCount": 318,
   "pupilCount": 15,
   "skipped": [
     {
@@ -79,6 +79,11 @@
       "path": "LIALIUK_SERHII/15_10_2026/countdown.py",
       "pupil": "LIALIUK_SERHII",
       "chars": 92
+    },
+    {
+      "path": "MICHALAK_PIOTR/15_10_2026/countdown.py",
+      "pupil": "MICHALAK_PIOTR",
+      "chars": 87
     },
     {
       "path": "SOLTYSIK_DOMINIK/17_09_2026/matrix.py",
