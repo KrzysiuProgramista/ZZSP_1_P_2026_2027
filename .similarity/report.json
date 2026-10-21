@@ -1,8 +1,8 @@
 {
-  "generated": "3825679e5c9bea66ddb86295e40fb93e4419f60e",
+  "generated": "77cc0f7ee8e762dd18f8228046a49eed70eb1796",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 318,
+  "fileCount": 324,
   "pupilCount": 15,
   "skipped": [
     {
@@ -119,6 +119,11 @@
       "path": "WALUSIAK_SEBASTIAN/10_09_2026/email_parts.py",
       "pupil": "WALUSIAK_SEBASTIAN",
       "chars": 92
+    },
+    {
+      "path": "WALUSIAK_SEBASTIAN/15_10_2026/countdown.py",
+      "pupil": "WALUSIAK_SEBASTIAN",
+      "chars": 96
     },
     {
       "path": "WOJECH_ADAM/08_10_2026/task_1.py",
@@ -900,6 +905,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "WALUSIAK_SEBASTIAN",
+        "path": "WALUSIAK_SEBASTIAN/15_10_2026/collatz.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-21T20:42:42+02:00"
+      },
+      "earlier": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/15_10_2026/collatz.py",
+        "assignment": "15_10_2026",
+        "added": "2026-10-18T16:13:15+02:00"
+      },
+      "jaccard": 0.7128,
+      "text": 0.9408,
+      "struct": 0.9786,
+      "chars": 155
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "KEPINSKI_ADRIAN",
         "path": "KEPINSKI_ADRIAN/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -1171,6 +1195,20 @@
     },
     {
       "pupils": [
+        "FOKS_JAKUB",
+        "WALUSIAK_SEBASTIAN"
+      ],
+      "paths": [
+        "FOKS_JAKUB/15_10_2026/collatz.py",
+        "WALUSIAK_SEBASTIAN/15_10_2026/collatz.py"
+      ],
+      "jaccard": 0.537,
+      "text": 0.9146,
+      "struct": 0.9564,
+      "chars": 162
+    },
+    {
+      "pupils": [
         "SOLTYSIK_DOMINIK",
         "WOJECH_ADAM"
       ],
@@ -1252,20 +1290,6 @@
       "text": 0.9884,
       "struct": 1.0,
       "chars": 171
-    },
-    {
-      "pupils": [
-        "GOSS_LEON",
-        "STRZELECKI_ADAM"
-      ],
-      "paths": [
-        "GOSS_LEON/10_09_2026/shopping.py",
-        "STRZELECKI_ADAM/10_09_2026/shopping.py"
-      ],
-      "jaccard": 0.4915,
-      "text": 0.9109,
-      "struct": 0.9322,
-      "chars": 198
     }
   ]
 }
