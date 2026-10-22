@@ -8,8 +8,8 @@ Pupil folder: `GABARA_KAROL`
 
 | your file | similarity | length |
 |---|---|---|
-| `GABARA_KAROL/01__10_2026/rock_paper_scissors.py` | **100%** | 341 chars |
-| `GABARA_KAROL/01__10_2026/ticket_price.py` | **100%** | 137 chars |
+| `GABARA_KAROL/01_10_2026/rock_paper_scissors.py` | **100%** | 341 chars |
+| `GABARA_KAROL/01_10_2026/ticket_price.py` | **100%** | 137 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.
 

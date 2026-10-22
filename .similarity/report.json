@@ -1,8 +1,8 @@
 {
-  "generated": "38c0cbbe0067d19dcdcd95fba69677cf230ef14a",
+  "generated": "e537dc0d540c107b5dc7a890021a6394525e4da6",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 326,
+  "fileCount": 337,
   "pupilCount": 16,
   "skipped": [
     {
@@ -373,6 +373,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:25:36+02:00"
+      },
+      "earlier": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:14:50+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 2526
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "FOKS_JAKUB",
         "path": "FOKS_JAKUB/03_09_2026/about_me.py",
         "assignment": "03_09_2026",
@@ -583,9 +602,9 @@
       "sameCommit": false,
       "later": {
         "pupil": "GABARA_KAROL",
-        "path": "GABARA_KAROL/01__10_2026/rock_paper_scissors.py",
-        "assignment": "01__10_2026",
-        "added": "2026-10-04T14:49:02+02:00"
+        "path": "GABARA_KAROL/01_10_2026/rock_paper_scissors.py",
+        "assignment": "01_10_2026",
+        "added": "2026-10-22T09:29:48+02:00"
       },
       "earlier": {
         "pupil": "GOSS_LEON",
@@ -602,9 +621,9 @@
       "sameCommit": false,
       "later": {
         "pupil": "GABARA_KAROL",
-        "path": "GABARA_KAROL/01__10_2026/ticket_price.py",
-        "assignment": "01__10_2026",
-        "added": "2026-10-04T14:44:09+02:00"
+        "path": "GABARA_KAROL/01_10_2026/ticket_price.py",
+        "assignment": "01_10_2026",
+        "added": "2026-10-22T09:29:48+02:00"
       },
       "earlier": {
         "pupil": "SOLTYSIK_DOMINIK",
@@ -810,6 +829,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "KMIEC_HUBERT",
+        "path": "KMIEC_HUBERT/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:08:34+02:00"
+      },
+      "earlier": {
+        "pupil": "WOJECH_ADAM",
+        "path": "WOJECH_ADAM/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:08:08+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 2512
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "STRZELECKI_ADAM",
         "path": "STRZELECKI_ADAM/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -863,6 +901,82 @@
       "text": 0.9934,
       "struct": 1.0,
       "chars": 150
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:14:50+02:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:36:38+02:00"
+      },
+      "jaccard": 0.7713,
+      "text": 0.911,
+      "struct": 0.9174,
+      "chars": 2157
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:25:36+02:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:36:38+02:00"
+      },
+      "jaccard": 0.7713,
+      "text": 0.911,
+      "struct": 0.9174,
+      "chars": 2157
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:14:50+02:00"
+      },
+      "earlier": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:37:15+02:00"
+      },
+      "jaccard": 0.7713,
+      "text": 0.911,
+      "struct": 0.9174,
+      "chars": 2157
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:25:36+02:00"
+      },
+      "earlier": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:37:15+02:00"
+      },
+      "jaccard": 0.7713,
+      "text": 0.911,
+      "struct": 0.9174,
+      "chars": 2157
     },
     {
       "sameCommit": false,
@@ -943,6 +1057,44 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "CZERNIAK_SZYMON",
+        "path": "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:14:50+02:00"
+      },
+      "earlier": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:11:57+02:00"
+      },
+      "jaccard": 0.71,
+      "text": 0.9705,
+      "struct": 0.8841,
+      "chars": 2455
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:25:36+02:00"
+      },
+      "earlier": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:11:57+02:00"
+      },
+      "jaccard": 0.71,
+      "text": 0.9705,
+      "struct": 0.8841,
+      "chars": 2455
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "KEPINSKI_ADRIAN",
         "path": "KEPINSKI_ADRIAN/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -1015,6 +1167,44 @@
       "text": 0.9036,
       "struct": 0.8756,
       "chars": 229
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:11:57+02:00"
+      },
+      "earlier": {
+        "pupil": "KMIEC_HUBERT",
+        "path": "KMIEC_HUBERT/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:08:34+02:00"
+      },
+      "jaccard": 0.6564,
+      "text": 0.9789,
+      "struct": 0.8747,
+      "chars": 2455
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:11:57+02:00"
+      },
+      "earlier": {
+        "pupil": "WOJECH_ADAM",
+        "path": "WOJECH_ADAM/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:08:08+02:00"
+      },
+      "jaccard": 0.6564,
+      "text": 0.9789,
+      "struct": 0.8747,
+      "chars": 2455
     },
     {
       "sameCommit": false,
@@ -1152,6 +1342,44 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:11:57+02:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:36:38+02:00"
+      },
+      "jaccard": 0.6144,
+      "text": 0.8938,
+      "struct": 0.8106,
+      "chars": 2157
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "SWIATOSLAV_TOMIUK",
+        "path": "SWIATOSLAV_TOMIUK/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T09:11:57+02:00"
+      },
+      "earlier": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:37:15+02:00"
+      },
+      "jaccard": 0.6144,
+      "text": 0.8938,
+      "struct": 0.8106,
+      "chars": 2157
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "CZERNIAK_SZYMON",
         "path": "CZERNIAK_SZYMON/17_09_2026/matrix.py",
         "assignment": "17_09_2026",
@@ -1214,6 +1442,62 @@
     },
     {
       "pupils": [
+        "CZERNIAK_SZYMON",
+        "KMIEC_HUBERT"
+      ],
+      "paths": [
+        "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "KMIEC_HUBERT/22_10_2026/Mars_Rescue_Individual_Starter.py"
+      ],
+      "jaccard": 0.5386,
+      "text": 0.9567,
+      "struct": 0.8217,
+      "chars": 2512
+    },
+    {
+      "pupils": [
+        "CZERNIAK_SZYMON",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "WOJECH_ADAM/22_10_2026/Mars_Rescue_Individual_Starter.py"
+      ],
+      "jaccard": 0.5386,
+      "text": 0.9567,
+      "struct": 0.8217,
+      "chars": 2512
+    },
+    {
+      "pupils": [
+        "GOSS_LEON",
+        "KMIEC_HUBERT"
+      ],
+      "paths": [
+        "GOSS_LEON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "KMIEC_HUBERT/22_10_2026/Mars_Rescue_Individual_Starter.py"
+      ],
+      "jaccard": 0.5386,
+      "text": 0.9567,
+      "struct": 0.8217,
+      "chars": 2512
+    },
+    {
+      "pupils": [
+        "GOSS_LEON",
+        "WOJECH_ADAM"
+      ],
+      "paths": [
+        "GOSS_LEON/22_10_2026/Mars_Rescue_Individual_Starter.py",
+        "WOJECH_ADAM/22_10_2026/Mars_Rescue_Individual_Starter.py"
+      ],
+      "jaccard": 0.5386,
+      "text": 0.9567,
+      "struct": 0.8217,
+      "chars": 2512
+    },
+    {
+      "pupils": [
         "FOKS_JAKUB",
         "WALUSIAK_SEBASTIAN"
       ],
@@ -1242,73 +1526,17 @@
     },
     {
       "pupils": [
-        "GOSS_LEON",
-        "MICHALAK_PIOTR"
+        "CYGAN_PAWEL",
+        "KMIEC_HUBERT"
       ],
       "paths": [
-        "GOSS_LEON/17_09_2026/week.py",
-        "MICHALAK_PIOTR/17_09_2026/week.py"
+        "CYGAN_PAWEL/22_10_2026/mars.py",
+        "KMIEC_HUBERT/22_10_2026/Mars_Rescue_Individual_Starter.py"
       ],
-      "jaccard": 0.5,
-      "text": 0.8812,
-      "struct": 0.8921,
-      "chars": 127
-    },
-    {
-      "pupils": [
-        "FOKS_JAKUB",
-        "JEDRZEJCZAK_ALEKSANDER"
-      ],
-      "paths": [
-        "FOKS_JAKUB/10_09_2026/temperature.py",
-        "JEDRZEJCZAK_ALEKSANDER/10_09_2026/temperature.py"
-      ],
-      "jaccard": 0.493,
-      "text": 0.9884,
-      "struct": 1.0,
-      "chars": 171
-    },
-    {
-      "pupils": [
-        "FOKS_JAKUB",
-        "SOLTYSIK_DOMINIK"
-      ],
-      "paths": [
-        "FOKS_JAKUB/10_09_2026/temperature.py",
-        "SOLTYSIK_DOMINIK/10_09_2026/temperaturaaa.py"
-      ],
-      "jaccard": 0.493,
-      "text": 0.9884,
-      "struct": 1.0,
-      "chars": 171
-    },
-    {
-      "pupils": [
-        "GABARA_KAROL",
-        "JEDRZEJCZAK_ALEKSANDER"
-      ],
-      "paths": [
-        "GABARA_KAROL/10_09_2026/temperature.py",
-        "JEDRZEJCZAK_ALEKSANDER/10_09_2026/temperature.py"
-      ],
-      "jaccard": 0.493,
-      "text": 0.9884,
-      "struct": 1.0,
-      "chars": 171
-    },
-    {
-      "pupils": [
-        "GABARA_KAROL",
-        "SOLTYSIK_DOMINIK"
-      ],
-      "paths": [
-        "GABARA_KAROL/10_09_2026/temperature.py",
-        "SOLTYSIK_DOMINIK/10_09_2026/temperaturaaa.py"
-      ],
-      "jaccard": 0.493,
-      "text": 0.9884,
-      "struct": 1.0,
-      "chars": 171
+      "jaccard": 0.5106,
+      "text": 0.8803,
+      "struct": 0.7488,
+      "chars": 2157
     }
   ]
 }
