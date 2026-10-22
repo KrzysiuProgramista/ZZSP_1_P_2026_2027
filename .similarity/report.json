@@ -1,9 +1,9 @@
 {
-  "generated": "77cc0f7ee8e762dd18f8228046a49eed70eb1796",
+  "generated": "38c0cbbe0067d19dcdcd95fba69677cf230ef14a",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 324,
-  "pupilCount": 15,
+  "fileCount": 326,
+  "pupilCount": 16,
   "skipped": [
     {
       "path": "CYGAN_PAWEL/10_09_2026/email_parts.py",
@@ -274,6 +274,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 614
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:37:15+02:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/22_10_2026/mars.py",
+        "assignment": "22_10_2026",
+        "added": "2026-10-22T08:36:38+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 2157
     },
     {
       "sameCommit": false,
