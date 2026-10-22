@@ -1,0 +1,228 @@
+"""
+MARS RESCUE: TELEMETRY BLACKOUT
+Individual Python quest
+
+STORY
+The Mars rover has sent one final telemetry packet before losing contact.
+Your mission is to analyse the data, decode the emergency beacon, and decide
+whether the rover can continue operating.
+
+RULES
+- Work individually.
+- Complete every TODO in order.
+- Keep the data below unchanged.
+- Use loops to calculate counts, totals, averages and maximums.
+- Do not use sum(), min(), max() or list.count() for the required calculations.
+- You may use variables, lists, strings, arithmetic, for, range(), len(), and if/elif/else.
+- Run the script regularly and fix errors as you go.
+
+Suggested time: 45-60 minutes + bonus mission.
+"""
+
+# ============================================================
+# MISSION DATA — DO NOT CHANGE THESE VALUES
+# ============================================================
+
+battery_levels = [100, 96, 91, 87, 80, 74, 69, 63, 58, 51]
+temperatures_c = [18, 19, 21, 24, 28, 31, 36, 39, 34, 29]
+commands = ["MOVE", "MOVE", "SCAN", "MOVE", "DRILL", "SCAN", "MOVE", "TRANSMIT", "MOVE"]
+beacon = "S.O.S - MARS 7"
+
+print("=" * 55)
+print("MARS RESCUE: TELEMETRY BLACKOUT")
+print("=" * 55)
+
+# ============================================================
+# MISSION 1 — RECONNECT THE ROVER
+# Print a countdown from 30 seconds to 0, decreasing by 5.
+# Expected values: 30, 25, 20, 15, 10, 5, 0
+# Use a for loop and range().
+# ============================================================
+
+print("\n[MISSION 1] RECONNECTION COUNTDOWN")
+for i in range(30, -1,-5):
+    print(i)
+
+# TODO 1: Write the countdown loop.
+# Hint: range() has a start, a stop (not included), and a step.
+
+
+# ============================================================
+# MISSION 2 — BATTERY FORENSICS
+# Calculate:
+#   a) the number of battery measurements
+#   b) the starting battery level
+#   c) the final battery level
+#   d) the total battery percentage points consumed
+# Important: calculate total consumption by comparing each reading
+# with the previous reading. Do not simply subtract the endpoints.
+# ============================================================
+
+print("\n[MISSION 2] BATTERY FORENSICS")
+measurement_count = 0
+starting_battery = 0
+final_battery = 0
+total_battery_used = 0
+for i in battery_levels:
+    measurement_count += 1
+starting_battery = battery_levels[0]
+final_battery = battery_levels[len(battery_levels)-1]
+for i in range(1, len(battery_levels)):
+    drop = battery_levels[i - 1] - battery_levels[i]
+    total_battery_used += drop
+
+
+# TODO 2a: Loop through battery_levels and count the measurements.
+
+# TODO 2b: Read the first item as starting_battery.
+
+# TODO 2c: Use len() and an index to read the final item.
+
+# TODO 2d: Use range() and list indexes to calculate each drop from
+# one reading to the next, adding every drop to total_battery_used.
+# Hint: begin at index 1 so you can compare index - 1 with index.
+
+print("Battery measurements:", measurement_count)
+print("Starting battery:", starting_battery, "%")
+print("Final battery:", final_battery, "%")
+print("Total battery used:", total_battery_used, "percentage points")
+
+
+# ============================================================
+# MISSION 3 — TEMPERATURE ALERT
+# Calculate:
+#   a) the sum and average of all temperature readings
+#   b) how many readings are at least 35 degrees
+#   c) the highest temperature reading
+# Do these calculations with a loop.
+# ============================================================
+
+print("\n[MISSION 3] TEMPERATURE ALERT")
+
+temperature_total = 0
+average_temperature = 0
+hot_readings = 0
+highest_temperature = temperatures_c[0]
+for temp in temperatures_c:
+    temperature_total += temp
+if temp >= 35:
+    hot_readings += 1
+if temp > highest_temperature:
+    highest_temperature = temp
+average_temperature = temperature_total / len(temperatures_c)
+
+# TODO 3: Loop through temperatures_c.
+# - Add each reading to temperature_total.
+# - Count readings that are >= 35.
+# - Update highest_temperature whenever you find a higher value.
+# - After the loop, calculate the average using len(temperatures_c).
+
+print("Average temperature:", average_temperature, "C")
+print("Readings at or above 35 C:", hot_readings)
+print("Highest temperature:", highest_temperature, "C")
+
+
+# ============================================================
+# MISSION 4 — COMMAND-CENTER AUDIT
+# Count how many times the rover received each command:
+# MOVE, SCAN, DRILL and TRANSMIT.
+# You must inspect the commands list using a loop.
+# ============================================================
+
+print("\n[MISSION 4] COMMAND-CENTER AUDIT")
+
+move_count = 0
+scan_count = 0
+drill_count = 0
+transmit_count = 0
+for cmd in commands:
+    if cmd == "MOVE":
+        move_count += 1
+    elif cmd == "SCAN":
+        scan_count += 1
+    elif cmd == "DRILL":
+        drill_count += 1
+    elif cmd == "TRANSMIT":
+        transmit_count += 1
+
+# TODO 4: Loop through commands.
+# Use if/elif to increase the correct counter for each command.
+
+print("MOVE commands:", move_count)
+print("SCAN commands:", scan_count)
+print("DRILL commands:", drill_count)
+print("TRANSMIT commands:", transmit_count)
+
+
+# ============================================================
+# MISSION 5 — DECODE THE EMERGENCY BEACON
+# The beacon contains dots, spaces and a dash as separators.
+# Build a new string containing all characters except those separators.
+# Example: "A - B" becomes "AB".
+# You must process the beacon one character at a time.
+# ============================================================
+
+print("\n[MISSION 5] EMERGENCY BEACON")
+
+decoded_beacon = ""
+for char in beacon:
+    if char != "." and char != " " and char != "-":
+        decoded_beacon += char
+# TODO 5: Loop through beacon character by character.
+# If the character is not a dot, space or dash, add it to decoded_beacon.
+
+print("Decoded beacon:", decoded_beacon)
+
+
+# ============================================================
+# FINAL MISSION — CAN THE ROVER SURVIVE?
+# Calculate the mission score:
+#   score = 100 - total battery used - (hot readings * 5)
+# Then print:
+#   - "ROVER STABLE" if final battery is at least 50 AND hot readings < 3
+#   - otherwise print "EMERGENCY MODE"
+# ============================================================
+
+print("\n[FINAL MISSION] ROVER STATUS")
+
+mission_score = 0
+mission_score = 100 - total_battery_used - (hot_readings * 5)
+if final_battery >= 50 and hot_readings < 3:
+    print("ROVER STABLE")
+else:
+    print("EMERGENCY MODE")
+
+# TODO 6a: Calculate mission_score using the formula above.
+
+# TODO 6b: Use an if/else statement to print the correct rover status.
+
+print("Mission score:", mission_score)
+print("Beacon code:", decoded_beacon)
+print("Mission analysis complete.")
+
+
+# ============================================================
+# BONUS MISSION — FIND THE BIGGEST BATTERY DROP
+# Find the largest decrease between two consecutive battery readings.
+# Also report which two readings it occurred between.
+# Example output format: "Largest drop: 7 points, between readings 4 and 5"
+# ============================================================
+
+print("\n[BONUS MISSION] BIGGEST BATTERY DROP")
+
+largest_drop = 0
+reading_before_drop = 0
+reading_after_drop = 0
+for i in range(1, len(battery_levels)):
+    current_drop = battery_levels[i - 1] - battery_levels[i]
+if current_drop > largest_drop:
+    largest_drop = current_drop
+    reading_before_drop = battery_levels[i -1]
+    reading_after_drop = battery_levels[i]
+
+# TODO BONUS: Loop through the readings using indexes.
+# Calculate each drop and update the three variables above when the
+# current drop is larger than largest_drop.
+
+print("Largest drop:", largest_drop, "points")
+print("Between readings:", reading_before_drop, "and", reading_after_drop)
