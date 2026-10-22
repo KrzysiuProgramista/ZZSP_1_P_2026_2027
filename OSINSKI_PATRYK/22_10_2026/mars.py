@@ -135,24 +135,4 @@ else:
 print("Mission score:", mission_score)
 print("Beacon code:", decoded_beacon)
 print("Mission analysis complete.")
-
-# ============================================================
-# BONUS MISSION — FIND THE BIGGEST BATTERY DROP
-# ============================================================
-
-print("\n[BONUS MISSION] BIGGEST BATTERY DROP")
-
-largest_drop = 0
-reading_before_drop = 0
-reading_after_drop = 0
-
-for i in range(1, len(battery_levels)):
-    drop = battery_levels[i - 1] - battery_levels[i]
-
-    if drop > largest_drop:
-        largest_drop = drop
-        reading_before_drop = i
-        reading_after_drop = i + 1
-
-print("Largest drop:", largest_drop, "points")
-print("Between readings:", reading_before_drop, "and", reading_after_drop)
+# i'm not doing the bonus mission!
