@@ -1,0 +1,208 @@
+"""ESCAPE THE TEMPLE II: THE INNER SANCTUM
+Student starter code. Complete the TODOs in small steps.
+Do not add external libraries. Use functions that RETURN values.
+"""
+
+STARTING_ENERGY = 20
+CRYSTAL_POWERS = [3, 8, 5, 2]
+REQUIRED_ARTIFACTS = ["Bronze Key", "Sun Crystal", "Temple Seal"]
+
+ROOMS = {
+    "1": {"id": "library", "name": "The Forgotten Library", "distance": 2,
+          "difficulty": 1, "requires": [], "artifact": "Bronze Key"},
+    "2": {"id": "crystal", "name": "The Crystal Chamber", "distance": 2,
+          "difficulty": 2, "requires": ["Bronze Key"], "artifact": "Sun Crystal"},
+    "3": {"id": "bridge", "name": "The Broken Bridge", "distance": 3,
+          "difficulty": 2, "requires": ["Bronze Key", "Sun Crystal"], "artifact": "Temple Seal"},
+}
+
+
+def show_status(inventory, energy):
+    """Print current energy and collected artifacts."""
+    # TODO 1: Display the energy and the contents of inventory.
+    print(f"\n--- STATUS ---")
+    print(f"Energy remaining: {energy}")
+    if inventory:
+        print(f"Artifacts collected: {', '.join(inventory)}")
+    else:
+        print("Artifacts collected: None")
+    print("--------------\n")
+
+
+def calculate_energy_cost(distance, difficulty):
+    """Return the energy cost: distance multiplied by difficulty."""
+    # TODO 2: Return distance * difficulty.
+    return distance * difficulty
+
+
+def can_enter_room(room, inventory, energy, completed_rooms):
+    """Return True if this room is available and affordable."""
+    # TODO 3:
+    # - Return False if room["id"] is already in completed_rooms.
+    if room["id"] in completed_rooms:
+        return False
+    
+    # - Return False if the player is missing any artifact in room["requires"].
+    for req in room["requires"]:
+        if req not in inventory:
+            return False
+            
+    # - Calculate the cost and check that energy is sufficient.
+    cost = calculate_energy_cost(room["distance"], room["difficulty"])
+    if energy < cost:
+        return False
+        
+    # - Otherwise, return True.
+    return True
+
+
+def sum_odd_crystals(values):
+    """Return the sum of odd numbers in values, using a loop."""
+    # TODO 4: Use a loop and % to add only odd values.
+    total = 0
+    for val in values:
+        if val % 2 != 0:
+            total += val
+    return total
+
+
+def is_palindrome(text):
+    """Return True when text is a palindrome, ignoring case and spaces/punctuation."""
+    # TODO 5: Normalize the text, then compare it with its reverse.
+    # Bonus: do not use [::-1]; use a loop or two indexes.
+    normalized = "".join(char.lower() for char in text if char.isalnum())
+    
+    if len(normalized) < 3:
+        return False
+        
+    left = 0
+    right = len(normalized) - 1
+    
+    while left < right:
+        if normalized[left] != normalized[right]:
+            return False
+        left += 1
+        right -= 1
+        
+    return True
+
+
+def solve_puzzle(puzzle_id, answer):
+    """Return True if the answer solves the requested room's puzzle."""
+    normalized = answer.strip().lower()
+
+    # TODO 6:
+    # library: the answer must be "echo" (case-insensitive).
+    if puzzle_id == "library":
+        return normalized == "echo"
+        
+    # crystal: the answer must be the sum of odd values in CRYSTAL_POWERS.
+    elif puzzle_id == "crystal":
+        expected_sum = str(sum_odd_crystals(CRYSTAL_POWERS))
+        return normalized == expected_sum
+        
+    # bridge: the answer must be a palindrome (use is_palindrome).
+    elif puzzle_id == "bridge":
+        return is_palindrome(answer)
+        
+    # Return False for an unknown puzzle_id.
+    return False
+
+
+def update_inventory(inventory, artifact):
+    """Add artifact if it is not already present; return inventory."""
+    # TODO 7: Do not add duplicates. Return the updated list.
+    if artifact not in inventory:
+        inventory.append(artifact)
+    return inventory
+
+
+def is_final_gate_unlocked(inventory):
+    """Return True only if all REQUIRED_ARTIFACTS are in inventory."""
+    # TODO 8: Check every required artifact.
+    for artifact in REQUIRED_ARTIFACTS:
+        if artifact not in inventory:
+            return False
+    return True
+
+
+def room_clue(room_id):
+    """Return the room's puzzle clue as a string."""
+    if room_id == "library":
+        return "I speak without a mouth and hear without ears. What am I?"
+    if room_id == "crystal":
+        return "Add only the ODD crystal powers: [3, 8, 5, 2]. What is the total?"
+    if room_id == "bridge":
+        return "Enter a palindrome with at least 3 letters. Ignore spaces and case."
+    return "Unknown room."
+
+
+def main():
+    inventory = []
+    completed_rooms = []
+    energy = STARTING_ENERGY
+
+    print("ESCAPE THE TEMPLE II: THE INNER SANCTUM")
+
+    # TODO 9: Build the game loop.
+    while True:
+        print("\nChoose an option:")
+        print("1 - The Forgotten Library")
+        print("2 - The Crystal Chamber")
+        print("3 - The Broken Bridge")
+        print("4 - Status")
+        print("5 - Try final gate")
+        print("6 - Quit")
+
+        choice = input("Enter your choice (1-6): ").strip()
+
+        if choice in ["1", "2", "3"]:
+            room = ROOMS[choice]
+            room_id = room["id"]
+
+            if not can_enter_room(room, inventory, energy, completed_rooms):
+                print("You cannot enter this room! (Check completed rooms, required artifacts, or energy levels).")
+                continue
+
+            cost = calculate_energy_cost(room["distance"], room["difficulty"])
+            energy -= cost
+
+            print(f"\nEntering {room['name']}...")
+            print(f"Clue: {room_clue(room_id)}")
+            player_answer = input("Your answer: ")
+
+            if solve_puzzle(room_id, player_answer):
+                print("Correct! Puzzle solved.")
+                inventory = update_inventory(inventory, room["artifact"])
+                completed_rooms.append(room_id)
+                print(f"You acquired: {room['artifact']}")
+            else:
+                print("Incorrect answer! You lost energy, but gained no artifact.")
+
+        elif choice == "4":
+            show_status(inventory, energy)
+
+        elif choice == "5":
+            if is_final_gate_unlocked(inventory):
+                print("\nCONGRATULATIONS! You have collected all artifacts and unlocked the final gate. You escaped the temple!")
+                break
+            else:
+                print("\nThe final gate remains locked. You are missing some required artifacts:")
+                for req in REQUIRED_ARTIFACTS:
+                    status = "[X]" if req in inventory else "[ ]"
+                    print(f"  {status} {req}")
+
+        elif choice == "6":
+            print("Exiting game. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 6.")
+
+        # Warunek przegranej (brak energii i brak ukończenia gry)
+        if energy <= 0 and not is_final_gate_unlocked(inventory):
+            print("\nYour energy has been completely depleted! You are trapped in the temple forever... Game Over.")
+            break
+
+
+if __name__ == "__main__":
+    main()
