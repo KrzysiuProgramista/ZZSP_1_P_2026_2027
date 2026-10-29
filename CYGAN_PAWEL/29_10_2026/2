@@ -1,1 +1,295 @@
 
+"""
+ESCAPE THE TEMPLE II: THE INNER SANCTUM
+Completed student starter code.
+No external libraries required.
+"""
+
+STARTING_ENERGY = 20
+CRYSTAL_POWERS = [3, 8, 5, 2]
+REQUIRED_ARTIFACTS = ["Bronze Key", "Sun Crystal", "Temple Seal"]
+
+ROOMS = {
+    "1": {
+        "id": "library",
+        "name": "The Forgotten Library",
+        "distance": 2,
+        "difficulty": 1,
+        "requires": [],
+        "artifact": "Bronze Key"
+    },
+    "2": {
+        "id": "crystal",
+        "name": "The Crystal Chamber",
+        "distance": 2,
+        "difficulty": 2,
+        "requires": ["Bronze Key"],
+        "artifact": "Sun Crystal"
+    },
+    "3": {
+        "id": "bridge",
+        "name": "The Broken Bridge",
+        "distance": 3,
+        "difficulty": 2,
+        "requires": ["Bronze Key", "Sun Crystal"],
+        "artifact": "Temple Seal"
+    },
+}
+
+
+def show_status(inventory, energy):
+    """Print current energy and collected artifacts."""
+    print("\n--- PLAYER STATUS ---")
+    print(f"Energy: {energy}")
+
+    if inventory:
+        print("Collected artifacts:")
+        for artifact in inventory:
+            print(f"- {artifact}")
+    else:
+        print("Collected artifacts: None")
+
+    print("---------------------\n")
+
+
+def calculate_energy_cost(distance, difficulty):
+    """Return the energy cost: distance multiplied by difficulty."""
+    return distance * difficulty
+
+
+def can_enter_room(room, inventory, energy, completed_rooms):
+    """Return True if this room is available and affordable."""
+
+    # The room must not have been completed already.
+    if room["id"] in completed_rooms:
+        return False
+
+    # The player must have all required artifacts.
+    for artifact in room["requires"]:
+        if artifact not in inventory:
+            return False
+
+    # Check whether the player has enough energy.
+    cost = calculate_energy_cost(
+        room["distance"],
+        room["difficulty"]
+    )
+
+    if energy < cost:
+        return False
+
+    return True
+
+
+def sum_odd_crystals(values):
+    """Return the sum of odd numbers in values, using a loop."""
+    total = 0
+
+    for value in values:
+        if value % 2 != 0:
+            total += value
+
+    return total
+
+
+def is_palindrome(text):
+    """
+    Return True when text is a palindrome,
+    ignoring case, spaces, and punctuation.
+    """
+
+    normalized = ""
+
+    # Keep only letters and digits.
+    for character in text.lower():
+        if character.isalnum():
+            normalized += character
+
+    # Build the reversed string without using [::-1].
+    reversed_text = ""
+
+    for character in normalized:
+        reversed_text = character + reversed_text
+
+    return normalized == reversed_text
+
+
+def solve_puzzle(puzzle_id, answer):
+    """Return True if the answer solves the requested room's puzzle."""
+    normalized = answer.strip().lower()
+
+    if puzzle_id == "library":
+        return normalized == "echo"
+
+    if puzzle_id == "crystal":
+        correct_answer = sum_odd_crystals(CRYSTAL_POWERS)
+        return normalized == str(correct_answer)
+
+    if puzzle_id == "bridge":
+        return is_palindrome(answer)
+
+    return False
+
+
+def update_inventory(inventory, artifact):
+    """Add artifact if it is not already present; return inventory."""
+
+    if artifact not in inventory:
+        inventory.append(artifact)
+
+    return inventory
+
+
+def is_final_gate_unlocked(inventory):
+    """Return True only if all required artifacts are in inventory."""
+
+    for artifact in REQUIRED_ARTIFACTS:
+        if artifact not in inventory:
+            return False
+
+    return True
+
+
+def room_clue(room_id):
+    """Return the room's puzzle clue as a string."""
+
+    if room_id == "library":
+        return "I speak without a mouth and hear without ears. What am I?"
+
+    if room_id == "crystal":
+        return "Add only the ODD crystal powers: [3, 8, 5, 2]. What is the total?"
+
+    if room_id == "bridge":
+        return "Enter a palindrome with at least 3 letters. Ignore spaces and case."
+
+    return "Unknown room."
+
+
+def main():
+    inventory = []
+    completed_rooms = []
+    energy = STARTING_ENERGY
+
+    print("=" * 45)
+    print("ESCAPE THE TEMPLE II: THE INNER SANCTUM")
+    print("=" * 45)
+    print("Collect all three artifacts to unlock the final gate!")
+
+    while True:
+
+        # Stop if energy is depleted and the gate is still locked.
+        if energy <= 0 and not is_final_gate_unlocked(inventory):
+            print("\nYou have run out of energy!")
+            print("The final gate remains locked. Game over.")
+            break
+
+        print("\nChoose an option:")
+        print("1 - The Forgotten Library")
+        print("2 - The Crystal Chamber")
+        print("3 - The Broken Bridge")
+        print("4 - Show status")
+        print("5 - Try the final gate")
+        print("6 - Quit")
+
+        choice = input("Your choice: ").strip()
+
+        # Option 6: Quit.
+        if choice == "6":
+            print("You leave the temple. Goodbye!")
+            break
+
+        # Option 4: Show player status.
+        elif choice == "4":
+            show_status(inventory, energy)
+            continue
+
+        # Option 5: Try the final gate.
+        elif choice == "5":
+            if is_final_gate_unlocked(inventory):
+                print("\nAll artifacts collected!")
+                print("The final gate opens.")
+                print("Congratulations! You escaped the temple!")
+                break
+            else:
+                print("\nThe final gate is locked.")
+                print("You still need these artifacts:")
+
+                for artifact in REQUIRED_ARTIFACTS:
+                    if artifact not in inventory:
+                        print(f"- {artifact}")
+
+                continue
+
+        # Options 1, 2, and 3: Enter a room.
+        elif choice in ROOMS:
+            room = ROOMS[choice]
+
+            # Check access requirements and available energy.
+            if not can_enter_room(
+                room,
+                inventory,
+                energy,
+                completed_rooms
+            ):
+                if room["id"] in completed_rooms:
+                    print("\nYou have already completed this room.")
+
+                elif energy < calculate_energy_cost(
+                    room["distance"],
+                    room["difficulty"]
+                ):
+                    print("\nYou do not have enough energy to enter this room.")
+
+                else:
+                    print("\nYou cannot enter this room yet.")
+                    print("You are missing required artifacts.")
+
+                    for artifact in room["requires"]:
+                        if artifact not in inventory:
+                            print(f"- {artifact}")
+
+                continue
+
+            # Pay the energy cost before attempting the puzzle.
+            cost = calculate_energy_cost(
+                room["distance"],
+                room["difficulty"]
+            )
+
+            energy -= cost
+
+            print(f"\nEntering: {room['name']}")
+            print(f"Energy cost: {cost}")
+            print(f"Remaining energy: {energy}")
+
+            # Display the puzzle and read the player's answer.
+            print("\nPuzzle:")
+            print(room_clue(room["id"]))
+
+            answer = input("Your answer: ")
+
+            # Check the answer.
+            if solve_puzzle(room["id"], answer):
+                print("\nCorrect! You solved the puzzle.")
+
+                artifact = room["artifact"]
+                update_inventory(inventory, artifact)
+
+                if room["id"] not in completed_rooms:
+                    completed_rooms.append(room["id"])
+
+                print(f"You collected: {artifact}")
+
+            else:
+                print("\nIncorrect answer!")
+                print("You lost the energy used to enter the room.")
+
+        # Any other menu choice is invalid.
+        else:
+            print("\nInvalid choice. Please enter a number from 1 to 6.")
+
+    print("\nThanks for playing ESCAPE THE TEMPLE II!")
+
+
+if __name__ == "__main__":
+    main()
