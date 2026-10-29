@@ -1,1 +1,96 @@
+# ESCAPE THE TEMPLE
+# Complete solution. Use return to send values back.
 
+
+def sum_digits(number):
+    """Return the sum of the digits."""
+    total = 0
+
+    for digit in str(abs(number)):
+        total += int(digit)
+
+    return total
+
+
+def count_vowels(text):
+    """Count and return the vowels a, e, i, o, u."""
+    vowels = "aeiou"
+    count = 0
+
+    for character in text.lower():
+        if character in vowels:
+            count += 1
+
+    return count
+
+
+def is_palindrome(text):
+    """Ignore letter case and spaces."""
+    normalized = text.lower().replace(" ", "")
+    return normalized == normalized[::-1]
+
+
+def build_code(digit_sum, vowel_count, palindrome_result):
+    """Return a three-character string."""
+    palindrome_digit = "1" if palindrome_result else "0"
+
+    return (
+        str(digit_sum)
+        + str(vowel_count)
+        + palindrome_digit
+    )
+
+
+def check_code(guess, secret_code):
+    """Return True if the codes match."""
+    return guess.strip() == secret_code
+
+
+def main():
+    print("================================")
+    print("     ESCAPE THE TEMPLE")
+    print("================================")
+    print("Solve the puzzles to unlock the temple!\n")
+
+    # Get a number and a word or phrase from the player.
+    try:
+        number = int(input("Enter a number: "))
+    except ValueError:
+        print("Invalid number. Please enter a whole number.")
+        return
+
+    text = input("Enter a word or phrase: ")
+
+    # Solve the puzzles.
+    digit_sum = sum_digits(number)
+    vowel_count = count_vowels(text)
+    palindrome_result = is_palindrome(text)
+
+    # Build the secret code.
+    secret_code = build_code(
+        digit_sum,
+        vowel_count,
+        palindrome_result
+    )
+
+    # Display the puzzle results.
+    print("\n--- Puzzle Results ---")
+    print(f"Sum of digits: {digit_sum}")
+    print(f"Number of vowels: {vowel_count}")
+    print(f"Is palindrome: {palindrome_result}")
+
+    # Ask the player to enter the code.
+    print("\nThe temple requires a three-character code.")
+    guess = input("Enter the secret code: ")
+
+    # Check whether the temple is unlocked.
+    if check_code(guess, secret_code):
+        print("\nCorrect code! The temple is unlocked!")
+        print("Congratulations, you escaped!")
+    else:
+        print("\nIncorrect code. The temple remains locked.")
+        print("Try again next time!")
+
+
+if __name__ == "__main__":
+    main()
