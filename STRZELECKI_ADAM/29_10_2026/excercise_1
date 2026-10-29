@@ -1,0 +1,89 @@
+"""
+ESCAPE THE TEMPLE
+Gra logiczna w Pythonie. Uzupełnij funkcje i złam szyfr, aby uciec ze świątyni!
+"""
+
+def sum_digits(number):
+    """Zwraca sumę cyfr podanej liczby."""
+    # Używamy abs(number), aby obsłużyć również liczby ujemne,
+    # zamieniamy liczbę na string i sumujemy każdą cyfrę przekształconą z powrotem na int.
+    return sum(int(digit) for digit in str(abs(number)))
+
+
+def count_vowels(text):
+    """Zlicza i zwraca liczbę samogłosek (a, e, i, o, u) w tekście."""
+    vowels = "aeiou"
+    # Przechodzimy przez każdy znak w tekście (zamienionym na małe litery)
+    # i zliczamy te, które należą do zbioru samogłosek.
+    return sum(1 for char in text.lower() if char in vowels)
+
+
+def is_palindrome(text):
+    """Sprawdza, czy tekst jest palindromem, ignorując wielkość liter i spacje."""
+    # Oczyszczamy tekst: zostawiamy tylko znaki alfanumeryczne i zamieniamy na małe litery
+    cleaned = "".join(char.lower() for char in text if char.isalnum())
+    # Zwracamy True, jeśli oczyszczony tekst jest równy swojej odwrotności
+    return cleaned == cleaned[::-1]
+
+
+def build_code(digit_sum, vowel_count, palindrome_result):
+    """
+    Tworzy 3-znakowy kod na podstawie wyników łamigłówek.
+    Mapuje wartości logiczne (True -> '1', False -> '0').
+    """
+    # Określamy warunki dla poszczególnych wyników:
+    # 1. Czy suma cyfr jest parzysta?
+    cond1 = (digit_sum % 2 == 0)
+    # 2. Czy samogłosek jest więcej niż 2?
+    cond2 = (vowel_count > 2)
+    # 3. Czy tekst był palindromem (zwraca boolean)?
+    cond3 = palindrome_result
+
+    # Mapujemy wartości True/False na znaki '1' lub '0'
+    c1 = "1" if cond1 else "0"
+    c2 = "1" if cond2 else "0"
+    c3 = "1" if cond3 else "0"
+
+    return c1 + c2 + c3
+
+
+def check_code(guess, secret_code):
+    """Zwraca True, jeśli podany kod (guess) pasuje do tajnego kodu (secret_code)."""
+    # Używamy .strip(), aby usunąć ewentualne przypadkowe spacje wpisane przez użytkownika
+    return guess.strip() == secret_code
+
+
+def main():
+    """Główna funkcja sterująca przebiegiem gry."""
+    print("Witaj w grze ESCAPE THE TEMPLE!")
+    print("Aby otworzyć bramę i uciec, musisz rozwiązać zagadki i wpisać poprawny kod.\n")
+
+    # Przykładowe dane wejściowe do zagadek w świątyni
+    temple_number = 482        # Do sumy cyfr (4 + 8 + 2 = 14)
+    temple_text = "Tajny Klucz" # Do samogłosek
+    temple_palindrome = "Radar" # Do sprawdzenia palindromu
+
+    print(f"Analizowana liczba: {temple_number}")
+    print(f"Analizowany tekst do samogłosek: '{temple_text}'")
+    print(f"Analizowany tekst do palindromu: '{temple_palindrome}'\n")
+
+    # 1. Wywołanie funkcji rozwiązujących poszczególne zagadki
+    d_sum = sum_digits(temple_number)
+    v_count = count_vowels(temple_text)
+    p_result = is_palindrome(temple_palindrome)
+
+    # 2. Zbudowanie tajnego kodu na podstawie wyników
+    secret = build_code(d_sum, v_count, p_result)
+
+    # 3. Interakcja z graczem
+    player_guess = input("Wprowadź 3-znakowy kod (składający się z '0' i '1'), aby otworzyć bramę: ")
+
+    # 4. Sprawdzenie, czy kod jest poprawny i wyświetlenie wyniku
+    if check_code(player_guess, secret):
+        print("\nGratulacje! Kod jest poprawny. Brama świątyni została otwarta! Uciekłeś!")
+    else:
+        print(f"\nBłędny kod! Świątynia pozostaje zamknięta. (Prawidłowy kod to: {secret})")
+
+
+if __name__ == "__main__":
+    main()
