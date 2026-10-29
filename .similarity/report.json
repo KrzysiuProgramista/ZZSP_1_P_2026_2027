@@ -1,8 +1,8 @@
 {
-  "generated": "f5275e9ad6029a17d0381305328b6ac5d4f8626f",
+  "generated": "ab31533c6058ad8c334dd8761a08f84cc5f15f3c",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 338,
+  "fileCount": 350,
   "pupilCount": 16,
   "skipped": [
     {
@@ -601,6 +601,44 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/29_10_2026/Ex2.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T09:40:14+01:00"
+      },
+      "earlier": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/29_10_2026/exercise.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T10:37:30+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 1240
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "FOKS_JAKUB",
+        "path": "FOKS_JAKUB/29_10_2026/Ex2.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T09:40:14+01:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/29_10_2026/ex.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T09:35:48+01:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 1240
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "GABARA_KAROL",
         "path": "GABARA_KAROL/01_10_2026/rock_paper_scissors.py",
         "assignment": "01_10_2026",
@@ -654,6 +692,44 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/29_10_2026/exercise.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T10:37:30+02:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/29_10_2026/ex.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T09:35:48+01:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 1240
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/29_10_2026/exercise2.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T10:39:13+02:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/29_10_2026/ex2.py",
+        "assignment": "29_10_2026",
+        "added": "2026-10-29T09:36:27+01:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 4085
     },
     {
       "sameCommit": false,
