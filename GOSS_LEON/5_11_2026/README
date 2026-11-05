@@ -1,0 +1,70 @@
+RPG Character Manager
+Project Description
+RPG Character Manager is a simple text-based Python application that allows users to create and manage an RPG character.
+
+Features
+Create a character.
+Choose between Warrior, Mage and Ranger.
+Calculate HP, attack and defense.
+Add items to inventory.
+Remove items from inventory.
+Calculate weapon bonuses.
+Level up a character.
+Display a character sheet.
+
+Character Classes
+The application includes three character classes:
+
+Warrior
+Mage
+Ranger
+
+Each class has different base statistics.
+
+Project Structure
+rpg_character_manager/
+main.py
+character.py
+inventory.py
+README.md
+
+How to Run
+Open the project folder in VS Code.
+Open the terminal.
+Run the following command:
+
+   python main.py
+
+Python Concepts Used
+Default arguments
+Keyword arguments
+Module-level constants
+Local variables and scope
+Multiple return values
+Tuple unpacking
+Docstrings
+*args
+Function composition
+Modules and imports
+
+Testing Checklist
+[ ] Create a character with default settings.
+[ ] Create a Mage character.
+[ ] Check character statistics.
+[ ] Add a weapon with a bonus.
+[ ] Add a potion with bonus 0.
+[ ] Remove an existing item.
+[ ] Try to remove a missing item.
+[ ] Level up a character.
+[ ] Display the character sheet.
+
+Requirements
+Python 3
+No external libraries required.
+
+
+
+ 
+ 
+ 
+ 
