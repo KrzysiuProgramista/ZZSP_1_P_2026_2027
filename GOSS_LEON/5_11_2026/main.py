@@ -1,32 +1,32 @@
+
+
 from character import create_character, calculate_stats, level_up
 from inventory import add_item, remove_item
 
 
-def show_character_sheet(character):
+def display_character(character):
     hp, attack, defense = calculate_stats(character)
 
     print("\n" + "=" * 36)
-    print("       CHARACTER SHEET")
+    print("        character information")
     print("=" * 36)
 
-    print(f"Class:   {character['class']}")
-    print(f"Level:   {character['level']}")
-    print(f"Name:    {character['name']}")
-
-
-
-    print(f"Attack:  {attack}")
-    print(f"Defense: {defense}")
-    print("-" * 36)
-    print(f"HP:      {hp}")
+    print(f"name:    {character['name']}")
+    print(f"class:   {character['class']}")
+    print(f"level:   {character['level']}")
+    print(f"attack:  {attack}")
+    print(f"defense: {defense}")
 
     print("-" * 36)
-    print("Inventory:")
+    print(f"health:  {hp}")
+    print("-" * 36)
 
-    if character["inventory"]:
-        for number, item in enumerate(character["inventory"], start=1):
+    print("inventory:")
+
+    if len(character["inventory"]) > 0:
+        for i, item in enumerate(character["inventory"], 1):
             print(
-                f"{number}. {item['name']} "
+                f"{i}. {item['name']} "
                 f"({item['type']}, bonus: {item['bonus']})"
             )
     else:
@@ -35,128 +35,126 @@ def show_character_sheet(character):
     print("=" * 36)
 
 
-def ask_for_integer(prompt, minimum=0):
+def get_number(message, minimum=0):
     while True:
         try:
-            value = int(input(prompt))
+            number = int(input(message))
 
-            if value >= minimum:
-                return value
-
-            print(f"enter a number of at least {minimum}.")
+            if number < minimum:
+                print(f"enter a value greater than or equal to {minimum}.")
+            else:
+                return number
 
         except ValueError:
-            print("please enter a whole number.")
+            print("please enter a valid whole number.")
 
 
-def create_hero():
-    name = input("character name: ").strip()
+def new_character():
+    name = input("enter character name: ").strip()
 
-    while not name:
-        print("Name cannot be empty.")
-        name = input("character name: ").strip()
+    while len(name) == 0:
+        print("name cannot be empty.")
+        name = input("enter character name: ").strip()
 
-    character_class = input(
-        "Class (warrior / mage / ranger, Enter = varrior): "
-    ).strip().title()
+    char_class = input(
+        "choose class (warrior / mage / ranger, enter = warrior): "
+    ).strip().lower()
 
-    if not character_class:
+    if char_class == "":
         return create_character(name)
 
-    while character_class not in ("warrior", "mage", "ranger"):
-        print("unknown class. choose warrior, mage or ranger.")
-        character_class = input("Class: ").strip().title()
+    while char_class not in ["warrior", "mage", "ranger"]:
+        print("this class does not exist.")
+        char_class = input("choose your class: ").strip().lower()
 
     return create_character(
         name=name,
-        character_class=character_class
+        character_class=char_class
     )
 
 
-def add_inventory_item(character):
-    name = input("item name: ").strip()
+def put_item_in_inventory(character):
+    item_name = input("enter item name: ").strip()
 
-    while not name:
+    while not item_name:
         print("item name cannot be empty.")
-        name = input("Item name: ").strip()
+        item_name = input("enter item name: ").strip()
 
-    item_type = input(
-        "item type (weapon / consumable / misc): "
+    category = input(
+        "item category (weapon / consumable / misc): "
     ).strip().lower()
 
-    if not item_type:
-        item_type = "misc"
+    if category == "":
+        category = "misc"
 
-    bonus = ask_for_integer("bonus (0 if none): ", minimum=0)
+    item_bonus = get_number("enter item bonus: ")
 
     try:
-        add_item(character, name, item_type, bonus)
-        print(f"{name} added to inventory.")
+        add_item(character, item_name, category, item_bonus)
+        print(f"{item_name} was added successfully.")
 
     except ValueError as error:
         print(error)
 
 
-def remove_inventory_item(character):
+def delete_item(character):
+    item_name = input("enter the name of the item: ").strip()
 
-    name = input("name of the item to remove: ").strip()
+    removed = remove_item(character, item_name)
 
-    if remove_item(character, name):
-        print("item removed.")
+    if removed:
+        print("item successfully removed.")
     else:
-        print("that item is not in the inventory.")
+        print("item not found.")
 
 
 def main():
-
-    character = None
+    hero = None
 
     while True:
-        print("\n===== RPG CHARACTER MANAGER =====")
-        print("1. create character")
-        print("2. add inventory item")
-        print("3. remove inventory item")
-        print("4. level up")
-        print("5. show character sheet")
-        print("0. exit")
+        print("\n===== character manager =====")
+        print("1. create a new character")
+        print("2. add an item")
+        print("3. delete an item")
+        print("4. increase level")
+        print("5. display character")
+        print("0. quit")
 
-        choice = input("choose an option: ").strip()
+        option = input("select an option: ").strip()
 
-        if choice == "1":
-            character = create_hero()
+        if option == "1":
+            hero = new_character()
 
             print(
-                f"welcome, {character['name']} "
-                f"the {character['class']}!"
+                f"welcome {hero['name']}, "
+                f"your class is {hero['class']}!"
             )
 
-        elif choice in ("2", "3", "4", "5"):
+        elif option in ["2", "3", "4", "5"]:
 
-            if character is None:
-                print("create a character first (option 1).")
+            if hero is None:
+                print("you need to create a character first.")
                 continue
 
-            if choice == "2":
-                add_inventory_item(character)
+            if option == "2":
+                put_item_in_inventory(hero)
 
-            elif choice == "3":
-                remove_inventory_item(character)
+            elif option == "3":
+                delete_item(hero)
 
-            elif choice == "4":
-                new_level = level_up(character)
-                print(
-                    f"{character['name']} reached level {new_level}!"
-                )
+            elif option == "4":
+                level = level_up(hero)
+                print(f"you reached level {level}!")
 
-            elif choice == "5":
-                show_character_sheet(character)
+            elif option == "5":
+                display_character(hero)
 
-        elif choice == "0":
-            print("thanks for playing. Goodbye!")
+        elif option == "0":
+            print("thanks for playing. goodbye!")
             break
 
         else:
-            print("invalid option. Choose a number from 0 to 5.")
+            print("wrong option. choose a number between 0 and 5.")
 
 
 if __name__ == "__main__":
