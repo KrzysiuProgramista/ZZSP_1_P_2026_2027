@@ -1,8 +1,8 @@
 {
-  "generated": "5232b8a9ba8c3ca565339d2d26354364f54b79f3",
+  "generated": "e37dcd0926979ee4639a0f1cb85360ccdd76ef09",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 352,
+  "fileCount": 369,
   "pupilCount": 16,
   "skipped": [
     {
@@ -962,6 +962,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/5_11_2026/library.py",
+        "assignment": "5_11_2026",
+        "added": "2026-11-05T09:15:49+01:00"
+      },
+      "earlier": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/05_11_2026/library.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T08:35:50+01:00"
+      },
+      "jaccard": 0.9726,
+      "text": 0.9989,
+      "struct": 0.9742,
+      "chars": 466
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "LIALIUK_SERHII",
         "path": "LIALIUK_SERHII/08_10_2026/Task1.py",
         "assignment": "08_10_2026",
@@ -977,6 +996,25 @@
       "text": 0.9934,
       "struct": 1.0,
       "chars": 150
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/5_11_2026/main.py",
+        "assignment": "5_11_2026",
+        "added": "2026-11-05T09:15:06+01:00"
+      },
+      "earlier": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/05_11_2026/main.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T08:35:50+01:00"
+      },
+      "jaccard": 0.8,
+      "text": 0.994,
+      "struct": 1.0,
+      "chars": 332
     },
     {
       "sameCommit": false,
@@ -1133,6 +1171,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "LIALIUK_SERHII",
+        "path": "LIALIUK_SERHII/05_11_2026/library.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T09:02:51+01:00"
+      },
+      "earlier": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/05_11_2026/library.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T08:35:50+01:00"
+      },
+      "jaccard": 0.7104,
+      "text": 0.9622,
+      "struct": 0.9652,
+      "chars": 433
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "CZERNIAK_SZYMON",
         "path": "CZERNIAK_SZYMON/22_10_2026/Mars_Rescue_Individual_Starter.py",
         "assignment": "22_10_2026",
@@ -1167,6 +1224,25 @@
       "text": 0.9705,
       "struct": 0.8841,
       "chars": 2455
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/5_11_2026/library.py",
+        "assignment": "5_11_2026",
+        "added": "2026-11-05T09:15:49+01:00"
+      },
+      "earlier": {
+        "pupil": "LIALIUK_SERHII",
+        "path": "LIALIUK_SERHII/05_11_2026/library.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T09:02:51+01:00"
+      },
+      "jaccard": 0.6892,
+      "text": 0.9611,
+      "struct": 0.9394,
+      "chars": 433
     },
     {
       "sameCommit": false,
@@ -1243,6 +1319,25 @@
       "text": 0.9036,
       "struct": 0.8756,
       "chars": 229
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/05_11_2026/library.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T09:15:22+01:00"
+      },
+      "earlier": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/05_11_2026/library.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-05T08:57:06+01:00"
+      },
+      "jaccard": 0.6606,
+      "text": 0.9461,
+      "struct": 1.0,
+      "chars": 1166
     },
     {
       "sameCommit": false,
