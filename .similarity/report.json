@@ -1,8 +1,8 @@
 {
-  "generated": "cf5c23977e22c6464440d2c9f30b4186d8669ff0",
+  "generated": "eae291e14116af35126b2e45f56868c7866b89da",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 396,
+  "fileCount": 401,
   "pupilCount": 16,
   "skipped": [
     {
@@ -84,6 +84,11 @@
       "path": "MICHALAK_PIOTR/15_10_2026/countdown.py",
       "pupil": "MICHALAK_PIOTR",
       "chars": 87
+    },
+    {
+      "path": "OSINSKI_PATRYK/17_09_2026/explanation.py",
+      "pupil": "OSINSKI_PATRYK",
+      "chars": 0
     },
     {
       "path": "SOLTYSIK_DOMINIK/17_09_2026/matrix.py",
@@ -274,6 +279,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 614
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-11-08T22:59:56+01:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-17T17:11:08+02:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 245
     },
     {
       "sameCommit": false,
@@ -1323,6 +1347,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-11-08T22:59:56+01:00"
+      },
+      "earlier": {
+        "pupil": "KEPINSKI_ADRIAN",
+        "path": "KEPINSKI_ADRIAN/17_09_2026/matrix.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-19T15:00:19+02:00"
+      },
+      "jaccard": 0.6879,
+      "text": 0.9094,
+      "struct": 0.8833,
+      "chars": 245
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "SOLTYSIK_DOMINIK",
         "path": "SOLTYSIK_DOMINIK/17_09_2026/grades.py",
         "assignment": "17_09_2026",
@@ -1623,6 +1666,25 @@
       "text": 0.9563,
       "struct": 1.0,
       "chars": 229
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "OSINSKI_PATRYK",
+        "path": "OSINSKI_PATRYK/17_09_2026/week.py",
+        "assignment": "17_09_2026",
+        "added": "2026-11-08T22:59:56+01:00"
+      },
+      "earlier": {
+        "pupil": "GOSS_LEON",
+        "path": "GOSS_LEON/17_09_2026/week.py",
+        "assignment": "17_09_2026",
+        "added": "2026-09-17T17:01:07+02:00"
+      },
+      "jaccard": 0.6,
+      "text": 0.8788,
+      "struct": 0.8961,
+      "chars": 127
     }
   ],
   "notices": [
