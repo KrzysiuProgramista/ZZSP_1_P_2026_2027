@@ -1,8 +1,8 @@
 {
-  "generated": "925f61e7be5ad58f50f90b24ce501c2afeccb3cb",
+  "generated": "cf5c23977e22c6464440d2c9f30b4186d8669ff0",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 382,
+  "fileCount": 396,
   "pupilCount": 16,
   "skipped": [
     {
@@ -962,6 +962,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/5_11_2026/rpg_character_manager/inventory.py",
+        "assignment": "5_11_2026",
+        "added": "2026-11-08T17:44:12+01:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/rpg_character_manager/inventory.py",
+        "assignment": "rpg_character_manager",
+        "added": "2026-11-08T17:34:18+01:00"
+      },
+      "jaccard": 0.9919,
+      "text": 0.9962,
+      "struct": 0.9932,
+      "chars": 528
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "GOSS_LEON",
         "path": "GOSS_LEON/5_11_2026/library.py",
         "assignment": "5_11_2026",
@@ -1114,6 +1133,25 @@
     {
       "sameCommit": false,
       "later": {
+        "pupil": "WALUSIAK_SEBASTIAN",
+        "path": "WALUSIAK_SEBASTIAN/05_11_2026/inventory.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-08T20:15:31+01:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/rpg_character_manager/inventory.py",
+        "assignment": "rpg_character_manager",
+        "added": "2026-11-08T17:34:18+01:00"
+      },
+      "jaccard": 0.7547,
+      "text": 0.9925,
+      "struct": 0.9961,
+      "chars": 528
+    },
+    {
+      "sameCommit": false,
+      "later": {
         "pupil": "KEPINSKI_ADRIAN",
         "path": "KEPINSKI_ADRIAN/15_10_2026/collatz.py",
         "assignment": "15_10_2026",
@@ -1129,6 +1167,25 @@
       "text": 0.8877,
       "struct": 0.8961,
       "chars": 162
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "WALUSIAK_SEBASTIAN",
+        "path": "WALUSIAK_SEBASTIAN/05_11_2026/inventory.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-08T20:15:31+01:00"
+      },
+      "earlier": {
+        "pupil": "MICHALAK_PIOTR",
+        "path": "MICHALAK_PIOTR/5_11_2026/rpg_character_manager/inventory.py",
+        "assignment": "5_11_2026",
+        "added": "2026-11-08T17:44:12+01:00"
+      },
+      "jaccard": 0.7494,
+      "text": 0.9888,
+      "struct": 0.9893,
+      "chars": 532
     },
     {
       "sameCommit": false,
@@ -1614,6 +1671,20 @@
     {
       "pupils": [
         "CZERNIAK_SZYMON",
+        "GOSS_LEON"
+      ],
+      "paths": [
+        "CZERNIAK_SZYMON/RPG_Character_Menager/character.py",
+        "GOSS_LEON/5_11_2026/character.py"
+      ],
+      "jaccard": 0.5502,
+      "text": 0.9353,
+      "struct": 0.9615,
+      "chars": 1058
+    },
+    {
+      "pupils": [
+        "CZERNIAK_SZYMON",
         "KMIEC_HUBERT"
       ],
       "paths": [
@@ -1694,20 +1765,6 @@
       "text": 0.9004,
       "struct": 0.8791,
       "chars": 261
-    },
-    {
-      "pupils": [
-        "CYGAN_PAWEL",
-        "KMIEC_HUBERT"
-      ],
-      "paths": [
-        "CYGAN_PAWEL/22_10_2026/mars.py",
-        "KMIEC_HUBERT/22_10_2026/Mars_Rescue_Individual_Starter.py"
-      ],
-      "jaccard": 0.5106,
-      "text": 0.8803,
-      "struct": 0.7488,
-      "chars": 2157
     }
   ]
 }
