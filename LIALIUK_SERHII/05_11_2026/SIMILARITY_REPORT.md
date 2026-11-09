@@ -8,6 +8,7 @@ Pupil folder: `LIALIUK_SERHII`
 
 | your file | similarity | length |
 |---|---|---|
+| `LIALIUK_SERHII/05_11_2026/RPG_Character_Manager/character.py` | **77%** | 977 chars |
 | `LIALIUK_SERHII/05_11_2026/library.py` | **71%** | 433 chars |
 
 Flagged because the overlap is at or above 60% on a substantial amount of code.

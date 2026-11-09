@@ -1,8 +1,8 @@
 {
-  "generated": "eae291e14116af35126b2e45f56868c7866b89da",
+  "generated": "8c03c263bbc116ee625ad0d6d185ef324235b00a",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 401,
+  "fileCount": 404,
   "pupilCount": 16,
   "skipped": [
     {
@@ -1134,6 +1134,25 @@
       "text": 0.911,
       "struct": 0.9174,
       "chars": 2157
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "LIALIUK_SERHII",
+        "path": "LIALIUK_SERHII/05_11_2026/RPG_Character_Manager/character.py",
+        "assignment": "05_11_2026",
+        "added": "2026-11-09T00:46:11+01:00"
+      },
+      "earlier": {
+        "pupil": "CYGAN_PAWEL",
+        "path": "CYGAN_PAWEL/rpg_character_manager/character.py",
+        "assignment": "rpg_character_manager",
+        "added": "2026-11-08T17:34:07+01:00"
+      },
+      "jaccard": 0.7706,
+      "text": 0.9929,
+      "struct": 0.9832,
+      "chars": 977
     },
     {
       "sameCommit": false,
