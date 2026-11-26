@@ -1,0 +1,117 @@
+import time
+
+orders = []
+meal_types = ("sandwich", "salad", "soup", "hot meal", "other")
+
+def sep():
+    print("////////////////////")
+
+def table_choices(table, true_index):
+    sep()
+    choices = {}
+    if true_index:
+        loop = table.items()
+    else:
+        loop = enumerate(table)
+        
+    for i, v in loop:
+        time.sleep(0.1)
+        if true_index:
+            choices[i] = v
+            if "ask" in v:
+                v = v["ask"]
+            print(str(i) + " - " + str(v))
+        else:
+            choices[i] = v
+            if isinstance(v, dict):
+                status = "Pending" if v["pending"] else "Served"
+                print(str(i) + " - " + v["customer"] + " (" + v["meal"] + ") - " + status)
+            else:
+                print(str(i) + " - " + str(v))
+                
+    if len(choices) == 0:
+        print("Empty")
+    sep()
+    return choices
+
+def add_order():
+    customer = input("Name for order: ")
+    choices = table_choices(meal_types, False)
+    meal = input("Choose meal for " + customer + ": ")
+    if meal.isdigit():
+        meal = int(meal)
+        if meal >= 0 and meal < len(choices):
+            selected = choices[meal]
+            orders.append({"customer": customer, "meal": selected, "pending": True})
+            print("Successfully added order")
+            time.sleep(2)
+        else:
+            print("Input a correct number")
+            time.sleep(2)
+    else:
+        print("Input a correct number")
+        time.sleep(2)
+
+def show_orders():
+    table_choices(orders, False)
+    time.sleep(2)
+
+def show_important_orders():
+    sep()
+    found = False
+    for i, order in enumerate(orders):
+        if order["pending"]:
+            print(str(i) + " - " + order["customer"] + " (" + order["meal"] + ")")
+            found = True
+    if not found:
+        print("Empty")
+    sep()
+    time.sleep(2)
+
+def mark_order_served():
+    choices = table_choices(orders, False)
+    if len(choices) == 0:
+        time.sleep(2)
+        return
+    num = input("Select order number to mark served: ")
+    if num.isdigit():
+        num = int(num)
+        if num >= 0 and num < len(orders):
+            orders[num]["pending"] = False
+            print("Order marked as served")
+            time.sleep(2)
+        else:
+            print("Input a correct number")
+            time.sleep(2)
+    else:
+        print("Input a correct number")
+        time.sleep(2)
+
+working = True
+
+def exit_menu():
+    global working
+    working = False
+
+options = {
+    0: {"ask": "Exit", "func": exit_menu},
+    1: {"ask": "Add order", "func": add_order},
+    2: {"ask": "Show orders", "func": show_orders},
+    3: {"ask": "Show orders that require action", "func": show_important_orders},
+    4: {"ask": "Mark order served", "func": mark_order_served},
+}
+
+while working:
+    choices = table_choices(options, True)
+    choice = input("Select action...: ")
+    if choice.isdigit():
+        choice = int(choice)
+        if choice >= 0 and choice < len(choices):
+            selected = choices[choice]
+            selected["func"]()
+        else:
+            print("Input a correct number")
+            time.sleep(2)
+    else:
+        print("Input a correct number")
+        time.sleep(2)
