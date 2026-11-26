@@ -1,0 +1,25 @@
+checkouts = []
+equipment_types = ("laptop", "camera", "projector", "tablet", "other")
+
+print("1. Add a checkout")
+print("2. Show all checkouts")
+print("3. Show all returned checkouts")
+print("4. Show all unreturned checkouts")
+print("5. Mark checkout as returned")
+
+choise = int(input("chose: "))
+
+if choise == 1:
+    checkouts.append(input({
+        "borower:"
+        "equipment: "
+        "returned: " 
+    }))
+elif choise == 2:
+    print(checkouts)
+elif choise == 3:
+    print(checkouts,True)
+elif choise == 4:
+    print(checkouts,False)
+elif choise == 5:
+    checkouts
