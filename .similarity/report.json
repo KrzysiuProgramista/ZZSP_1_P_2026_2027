@@ -1,8 +1,8 @@
 {
-  "generated": "1243cf462fc096ddf0fdcaae1d0785746a8ef376",
+  "generated": "948d3b8ae453132499ddd10655ac608faa29dfcf",
   "minChars": 100,
   "threshold": 0.6,
-  "fileCount": 405,
+  "fileCount": 414,
   "pupilCount": 16,
   "skipped": [
     {
@@ -716,6 +716,25 @@
       "text": 1.0,
       "struct": 1.0,
       "chars": 123
+    },
+    {
+      "sameCommit": false,
+      "later": {
+        "pupil": "GABARA_KAROL",
+        "path": "GABARA_KAROL/26_11_2026/practicaltask.py",
+        "assignment": "26_11_2026",
+        "added": "2026-11-26T08:48:16Z"
+      },
+      "earlier": {
+        "pupil": "STRZELECKI_ADAM",
+        "path": "STRZELECKI_ADAM/26_11_2026/test.py",
+        "assignment": "26_11_2026",
+        "added": "2026-11-26T09:43:22+01:00"
+      },
+      "jaccard": 1.0,
+      "text": 1.0,
+      "struct": 1.0,
+      "chars": 1099
     },
     {
       "sameCommit": false,
