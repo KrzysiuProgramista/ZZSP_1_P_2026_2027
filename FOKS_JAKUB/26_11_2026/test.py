@@ -51,7 +51,8 @@ def served_orders(orders):
         except ValueError:
             print("Please enter a number")
 
-      running = True
+
+running = True
 while running:
     print("1. Add a new order")
     print("2. Display all orders")
